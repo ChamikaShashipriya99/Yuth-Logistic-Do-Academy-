@@ -178,8 +178,17 @@ $services_button_link      = get_field( 'services_section_button_link' ) ?: '';
                     </div>
                     <div class="ph-au-r-button" data-aos="fade-up" data-aos-delay="150">
                         <div class="vc-theme-button">
-                            <a href="<?php the_field('about_us_button_link'); // About Us CTA URL ?>" target="_self">
-                                <?php the_field('about_us_button_text'); // About Us CTA text ?>
+                            <?php
+                            // Get About Us page link - tries ACF field first, falls back to page by slug
+                            $about_page_link = get_field('about_us_button_link');
+                            if ( empty( $about_page_link ) ) {
+                                $about_page = get_page_by_path( 'about-us' );
+                                $about_page_link = $about_page ? get_permalink( $about_page ) : home_url( '/about-us/' );
+                            }
+                            $about_button_text = get_field('about_us_button_text') ?: 'Read more';
+                            ?>
+                            <a href="<?php echo esc_url( $about_page_link ); ?>" target="_self">
+                                <?php echo esc_html( $about_button_text ); ?>
                             </a>
                         </div>
                     </div>
