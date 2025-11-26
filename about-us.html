@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <!-- ============================================
+         HEAD SECTION
+         ============================================ -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us – Yuth Logistics</title>
+        <meta name="robots" content="max-image-preview:large"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" 
+        integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="images/titelIcon.png"/>
+        <style>
+            /* Override sprite path for local HTML file */
+            .bagels-sprite {
+                background-image: url('images/icon-sprite.png') !important;
+            }
+        </style>
+        <script type="text/javascript" src="https://yuthlogistics.com.au/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+    </head>
+     <body class="page wp-singular page-template-default page-about-us wp-theme-YuthLogistics">
+        <div class="body-wrap">
+            <!-- ============================================
+                 HEADER / NAVIGATION SECTION
+                 ============================================ -->
+            <nav class="navbar navbar-fixed-top navbar-default" id="site-header">
+                <div class="container">
+                    <div class="flex-parent bagels-trans-p-2">
+                        <div class="navbar-header">
+                            <a class="navbar-brand header-logo" href="index.html">
+                                <img class="bagels-trans-p-2" src="images/Logo.svg" alt="Yuth Logistics">
+                            </a>
+                            <div class="nh-1">
+                                <div class="contact-info-bar style-2 visible-sm">
+                                    <div class="cib-1">
+                                        <div class="contact-group">
+                                            <h4 class="cg-heading">
+                                                <span class="cg-h-icon">
+                                                    <i class="fas fa-phone"></i>
+                                                </span>
+                                                <span class="cg-h-text">Hotline</span>
+                                            </h4>
+                                            <p class="cg-text">
+                                                <a href="tel:+0423030433">+042 30 30 433</a>
+                                            </p>
+                                        </div>
+                                        <div class="contact-group">
+                                            <h4 class="cg-heading">
+                                                <span class="cg-h-icon">
+                                                    <i class="fas fa-envelope"></i>
+                                                </span>
+                                                <span class="cg-h-text">Email</span>
+                                            </h4>
+                                            <p class="cg-text">
+                                                <a href="mailto:admin@yuthlogistics.com.au">admin@yuthlogistics.com.au</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-info-bar style-3 visible-xs">
+                                    <div class="cib-1">
+                                        <div class="contact-group">
+                                            <h4 class="cg-heading">
+                                                <a href="tel:+0423030433" title="Phone">
+                                                    <span class="cg-h-icon">
+                                                        <i class="fas fa-phone"></i>
+                                                    </span>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" data-sidebar="left-sidebar" class="sidebar-toggler header-ham-icon visible-xs visible-sm" title="Toggle menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse" id="main-navbar">
+                            <div class="contact-info-bar style-1 bagels-trans-p-2">
+                                <div class="cib-1">
+                                    <div class="contact-group">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-icon">
+                                                <i class="fas fa-phone"></i>
+                                            </span>
+                                            <span class="cg-h-text">Hotline</span>
+                                        </h4>
+                                        <p class="cg-text">
+                                            <a href="tel:+0423030433">+042 30 30 433</a>
+                                        </p>
+                                    </div>
+                                    <div class="contact-group">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-icon">
+                                                <i class="fas fa-envelope"></i>
+                                            </span>
+                                            <span class="cg-h-text">Email</span>
+                                        </h4>
+                                        <p class="cg-text">
+                                            <a href="mailto:admin@yuthlogistics.com.au">admin@yuthlogistics.com.au</a>
+                                        </p>
+                                    </div>
+                                    <div class="contact-group">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-text">Follow us on</span>
+                                        </h4>
+                                        <ul class="cg-socials">
+                                            <li>
+                                                <a class="cg-s-icon" href="#" target="_blank" title="Facebook" rel="noopener">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="cg-s-icon" href="#" target="_blank" title="Instagram" rel="noopener">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="cg-s-icon" href="#" target="_blank" title="Tiktok" rel="noopener">
+                                                    <i class="fab fa-tiktok"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul id="menu-header-menu" class="nav navbar-nav navbar-right">
+                                <li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-61">
+                                    <a title="Home" href="index.html">Home</a>
+                                </li>
+                                <li id="menu-item-76" class="menu-item menu-item-type-post_type_archive menu-item-object-services menu-item-has-children menu-item-76 dropdown">
+                                    <a title="Services" href="#" class="dropdown-toggle" aria-haspopup="true">
+                                        Services <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li id="menu-item-532" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-532">
+                                            <a title="Tailgate Haul &#038; Truck with Forklift Service" href="#">Tailgate Haul &#038; Truck with Forklift Service</a>
+                                        </li>
+                                        <li id="menu-item-528" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-528">
+                                            <a title="Onsite Forklift Hire" href="#">Onsite Forklift Hire</a>
+                                        </li>
+                                        <li id="menu-item-527" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-527">
+                                            <a title="Metro &#038; Regional Same-Day Delivery" href="#">Metro &#038; Regional Same-Day Delivery</a>
+                                        </li>
+                                        <li id="menu-item-529" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-529">
+                                            <a title="Pallet Transport" href="#">Pallet Transport</a>
+                                        </li>
+                                        <li id="menu-item-530" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-530">
+                                            <a title="Point A to B Transport" href="#">Point A to B Transport</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-426" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-426 active">
+                                    <a title="About Us" href="about-us.html">About Us</a>
+                                </li>
+                                <li id="menu-item-454" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-454">
+                                    <a title="Blog" href="blog.html">Blog</a>
+                                </li>
+                                <li id="menu-item-455" class="menu-item menu-item-type-post_type_archive menu-item-object-faqs menu-item-455">
+                                    <a title="FAQs" href="#">FAQs</a>
+                                </li>
+                                <li id="menu-item-618" class="vc-theme-button menu-item menu-item-type-post_type menu-item-object-page menu-item-618">
+                                    <a title="Contact Us" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- ============================================
+                 MOBILE SIDEBAR NAVIGATION
+                 ============================================ -->
+            <div class="sidebar-nav visible-xs visible-sm" id="left-sidebar">
+                <ul id="menu-mobile-menu" class="nav navbar-nav navbar-right">
+                    <li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-87">
+                        <a title="Home" href="index.html">Home</a>
+                    </li>
+                    <li id="menu-item-93" class="menu-item menu-item-type-post_type_archive menu-item-object-services menu-item-has-children menu-item-93 dropdown">
+                        <a title="Services" href="#" data-toggle="dropdown">
+                            Services <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li id="menu-item-526" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-526">
+                                <a title="Tailgate Haul &#038; Truck with Forklift Service" href="#">Tailgate Haul &#038; Truck with Forklift Service</a>
+                            </li>
+                            <li id="menu-item-522" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-522">
+                                <a title="Onsite Forklift Hire" href="#">Onsite Forklift Hire</a>
+                            </li>
+                            <li id="menu-item-521" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-521">
+                                <a title="Metro &#038; Regional Same-Day Delivery" href="#">Metro &#038; Regional Same-Day Delivery</a>
+                            </li>
+                            <li id="menu-item-523" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-523">
+                                <a title="Pallet Transport" href="#">Pallet Transport</a>
+                            </li>
+                            <li id="menu-item-524" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-524">
+                                <a title="Point A to B Transport" href="#">Point A to B Transport</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-90 active">
+                        <a title="About Us" href="about-us.html">About Us</a>
+                    </li>
+                    <li id="menu-item-458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458">
+                        <a title="Blog" href="blog.html">Blog</a>
+                    </li>
+                    <li id="menu-item-649" class="menu-item menu-item-type-post_type_archive menu-item-object-faqs menu-item-649">
+                        <a title="FAQs" href="#">FAQs</a>
+                    </li>
+                    <li id="menu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91">
+                        <a title="Contact Us" href="#">Contact Us</a>
+                    </li>
+                    <li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-89">
+                        <a title="Privacy Policy" href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-overlay"></div>
+
+            <!-- ====== PAGE HEADER BANNER ====== -->
+            <div class="page-header-banner bagels-overlay">
+                <div class="phb-bg"></div>
+                <div class="container phb-container bagels-pos-relative">
+                    <div class="phb-content">
+                        <h1 class="phb-heading bagels-ff-gilroy-bold-alt">About Us</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================
+                 ABOUT US PAGE CONTENT
+                 ============================================ -->
+            <div class="page-container pg-about-us">
+                <div class="ph-services">
+                    <div class="container">
+                        <div class="pg-au-columns">
+                            <div class="bg-two-col-sect">
+                                <div class="tcs-1 bagels-flex bagels-align-center">
+                                    <div class="tcs-img-col has-text">
+                                        <div class="tcs-ic-img-wrapper img-large">
+                                            <img class="tcs-ic-iw-img" src="images/yuth-logistics-HQ.jpg" width="645" height="351" alt="yuth-logistics-HQ">
+                                        </div>
+                                    </div>
+                                    <div class="tcs-text-col bagels-wysiwyg-content">
+                                        <h2>Know Us Better</h2>
+                                        <p style="text-align: left;">At Yuth Logistics, we're a family-owned business proudly delivering fast, secure, and professional transport solutions across Melbourne's Southeast. Since starting out in 2016, we've built 9 years of experience helping businesses of all sizes keep their operations running smoothly. Whether you need pallet transport, forklift deliveries, tail lift services, or commercial freight, we've got the right team and equipment to get the job done safely and on time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pg-au-content bagels-wysiwyg-content">
+                            <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <p class="full-length">From job sites and warehouses to small businesses and major corporations, we provide reliable services tailored to your needs. We specialize in moving building supplies, machinery, and bulk goods, always ensuring secure handling from pickup to delivery.<br><br>At Yuth Logistics, we genuinely care about delivering hassle-free, cost-effective solutions you can count on. Our goal is simple—help you move what matters most, without delays or stress. When you work with us, you're choosing a team committed to professionalism, safety, and exceptional service every step of the way.</p>
+                            <div style="height:65px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h2 class="wp-block-heading has-text-align-center">What We Offer</h2>
+                            <div style="height:1px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h4 class="wp-block-heading has-text-align-center">Point A to B Transport</h4>
+                            <p class="has-text-align-center">Our drivers efficiently load and transport goods, ensuring safe, on-time, and reliable deliveries from Point A to Point B.</p>
+                            <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h4 class="wp-block-heading has-text-align-center">Onsite Forklift Hire</h4>
+                            <p class="has-text-align-center">We provide onsite forklift hire with skilled operators and high-performance equipment to handle heavy loads at job sites, warehouses, or business locations.</p>
+                            <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h4 class="wp-block-heading has-text-align-center">Metro &amp; Regional SAME-DAY Deliveries</h4>
+                            <p class="has-text-align-center">We offer same-day delivery services across metro and regional areas, ensuring your shipments arrive quickly and without delays.</p>
+                            <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h4 class="wp-block-heading has-text-align-center">Pallet Transport</h4>
+                            <p class="has-text-align-center">From warehouses to job sites, our palletised freight transport ensures safe, efficient, and streamlined logistics to keep your supply chain moving.</p>
+                            <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h4 class="wp-block-heading has-text-align-center">Tailgate, Forklift &amp; Truck Deliveries</h4>
+                            <p class="has-text-align-center">Our tailgate, Truck and forklift delivery services are designed for oversized, fragile, or heavy shipments, ensuring secure and efficient handling.</p>
+                            <div style="height:28px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <hr class="wp-block-separator has-text-color has-cyan-bluish-gray-color has-alpha-channel-opacity has-cyan-bluish-gray-background-color has-background bagels-hr is-style-default hr-thin hr-pale">
+                            <div style="height:28px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h2 class="wp-block-heading has-text-align-center">Our Vision</h2>
+                            <p class="has-text-align-center">To be the trusted transport provider, recognised for exceptional service,<br>experienced operators, and dependable solutions that keep businesses moving.</p>
+                            <div style="height:15px" aria-hidden="true" class="wp-block-spacer"></div>
+                            <h2 class="wp-block-heading has-text-align-center">Our Mission</h2>
+                            <p class="has-text-align-center">To deliver fast, reliable, and efficient transport services, focusing on exceptional service, skilled operators, and dependable solutions. We ensure safe handling and on-time deliveries, helping businesses streamline operations and confidently move forward.</p>
+                        </div>
+                        <div class="pg-au-related-services dark-owl-dots h-p-ul-m-0">
+                            <div class="vc-theme-title vc-tt-align-center vc-tt-dark">
+                                <div class="vc-tt-sub-title">
+                                    <div class="vc-tt-st-1">Our Services</div>
+                                </div>
+                                <h2 class="vc-tt-title">Expert Logistics Services</h2>
+                            </div>
+                            <div class="pg-au-services ph-svs-services">
+                                <div class="pg-au-rs-list ph-svs-s-1 owl-carousel">
+                                    <div class="ph-svs-s-s-0">
+                                        <a href="#" title="Tailgate Haul &amp; Truck with Forklift Service" class="ph-svs-s-single bagels-pos-relative">
+                                            <div class="ph-svs-s-s-icon bagels-filter-black-to-red bagels-sprite three-trucks-parallel"></div>
+                                            <div class="ph-svs-s-s-icon-large bagels-filter-black-to-red bagels-sprite bagels-pos-absolute three-trucks-parallel"></div>
+                                            <h4 class="ph-svs-s-s-title bagels-trans-p-2 bagels-block-title bagels-ff-gilroy-bold">Tailgate Haul &amp; Truck with Forklift Service</h4>
+                                            <p class="ph-svs-s-s-dscr bagels-trans-p-2">Seamless goods transportation across Victoria, ensuring timely, secure, and insured deliveries.</p>
+                                            <div class="ph-svs-s-s-link">
+                                                <span class="ph-svs-s-s-l-1">Read more</span>
+                                                <span class="ph-svs-s-s-l-icon"><i class="fas fa-angle-double-right"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="ph-svs-s-s-0">
+                                        <a href="#" title="Onsite Forklift Hire" class="ph-svs-s-single bagels-pos-relative">
+                                            <div class="ph-svs-s-s-icon bagels-filter-black-to-red bagels-sprite forklift"></div>
+                                            <div class="ph-svs-s-s-icon-large bagels-filter-black-to-red bagels-sprite bagels-pos-absolute forklift"></div>
+                                            <h4 class="ph-svs-s-s-title bagels-trans-p-2 bagels-block-title bagels-ff-gilroy-bold">Onsite Forklift Hire</h4>
+                                            <p class="ph-svs-s-s-dscr bagels-trans-p-2">Specializes in solutions for securely moving heavy-duty equipment safely and efficiently.</p>
+                                            <div class="ph-svs-s-s-link">
+                                                <span class="ph-svs-s-s-l-1">Read more</span>
+                                                <span class="ph-svs-s-s-l-icon"><i class="fas fa-angle-double-right"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="ph-svs-s-s-0">
+                                        <a href="#" title="Metro &amp; Regional Same-Day Delivery" class="ph-svs-s-single bagels-pos-relative">
+                                            <div class="ph-svs-s-s-icon bagels-filter-black-to-red bagels-sprite lorry-with-cargo"></div>
+                                            <div class="ph-svs-s-s-icon-large bagels-filter-black-to-red bagels-sprite bagels-pos-absolute lorry-with-cargo"></div>
+                                            <h4 class="ph-svs-s-s-title bagels-trans-p-2 bagels-block-title bagels-ff-gilroy-bold">Metro &amp; Regional Same-Day Delivery</h4>
+                                            <p class="ph-svs-s-s-dscr bagels-trans-p-2">Reliable same-day delivery for urgent shipments across metro and regional areas with efficiency.</p>
+                                            <div class="ph-svs-s-s-link">
+                                                <span class="ph-svs-s-s-l-1">Read more</span>
+                                                <span class="ph-svs-s-s-l-icon"><i class="fas fa-angle-double-right"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="ph-svs-s-s-0">
+                                        <a href="#" title="Pallet Transport" class="ph-svs-s-single bagels-pos-relative">
+                                            <div class="ph-svs-s-s-icon bagels-filter-black-to-red bagels-sprite forklift-two-boxes"></div>
+                                            <div class="ph-svs-s-s-icon-large bagels-filter-black-to-red bagels-sprite bagels-pos-absolute forklift-two-boxes"></div>
+                                            <h4 class="ph-svs-s-s-title bagels-trans-p-2 bagels-block-title bagels-ff-gilroy-bold">Pallet Transport</h4>
+                                            <p class="ph-svs-s-s-dscr bagels-trans-p-2">Secure palletized freight transport with flexible options and timely delivery.</p>
+                                            <div class="ph-svs-s-s-link">
+                                                <span class="ph-svs-s-s-l-1">Read more</span>
+                                                <span class="ph-svs-s-s-l-icon"><i class="fas fa-angle-double-right"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="ph-svs-s-s-0">
+                                        <a href="#" title="Point A to B Transport" class="ph-svs-s-single bagels-pos-relative">
+                                            <div class="ph-svs-s-s-icon bagels-filter-black-to-red bagels-sprite two-location-markers"></div>
+                                            <div class="ph-svs-s-s-icon-large bagels-filter-black-to-red bagels-sprite bagels-pos-absolute two-location-markers"></div>
+                                            <h4 class="ph-svs-s-s-title bagels-trans-p-2 bagels-block-title bagels-ff-gilroy-bold">Point A to B Transport</h4>
+                                            <p class="ph-svs-s-s-dscr bagels-trans-p-2">All-terrain forklifts with skilled operators for precise material handling at job sites, homes, or yards.</p>
+                                            <div class="ph-svs-s-s-link">
+                                                <span class="ph-svs-s-s-l-1">Read more</span>
+                                                <span class="ph-svs-s-s-l-icon"><i class="fas fa-angle-double-right"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================
+                 LOOKING FOR RELIABLE TRANSPORT CTA SECTION
+                 ============================================ -->
+            <div class="footer-cta-banner h-p-ul-m-0">
+                <picture>
+                    <source media="(max-width: 991px)">
+                    <source>
+                    <img src="images/lookingForTransport.jpg" alt="landscape-of-truck-driver-in-uniform-smiling-before-edited-trucks" class="cta-banner cta-banner-img bagels-cover-img">
+                </picture>
+                <div class="container cta-1">
+                    <div class="cta-2">
+                        <div class="cta-heading">
+                            <h2 class="cta-h-1">
+                                Looking for<br/>Reliable Transport?
+                            </h2>
+                        </div>
+                        <div class="cta-descr">
+                            <p class="cta-d-1">
+                                Save Time. Save Money.<br/>Choose Yuth Logistics Today.
+                            </p>
+                        </div>
+                        <div class="cta-button">
+                            <div class="vc-theme-button">
+                                <a title="Contact Us" target="_self" href="#" data-fancybox="">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================
+                 FOOTER WIDGET AREA / CONTACT US SECTION
+                 ============================================ -->
+            <div id="footer-widget-area" class="h-p-ul-m-0">
+                <div class="container">
+                    <div class="footer-widget-box fwb-brands h-p-ul-m-0">
+                        <div class="fwb-ci-1"></div>
+                    </div>
+                    <div class="footer-widget-box fwb-contact-info h-p-ul-m-0">
+                        <div class="fwb-ci-1">
+                            <h2 class="fwb-ci-title">Contact Us</h2>
+                            <div class="contact-info-bar style-3">
+                                <div class="cib-1 cib-has-whatsapp">
+                                    <div class="contact-group cg-two-nums">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-icon">
+                                                <i class="fas fa-phone-alt"></i>
+                                            </span>
+                                            <span class="cg-h-text">Hotline</span>
+                                        </h4>
+                                        <p class="cg-text">
+                                            <a class="cg-t-link cg-t-l-phone" href="tel:+0423030433">+042 30 30 433</a>
+                                        </p>
+                                    </div>
+                                    <div class="contact-group">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-icon">
+                                                <i class="fas fa-envelope"></i>
+                                            </span>
+                                            <span class="cg-h-text">Email</span>
+                                        </h4>
+                                        <p class="cg-text">
+                                            <a href="mailto:admin@yuthlogistics.com.au">admin@yuthlogistics.com.au</a>
+                                        </p>
+                                    </div>
+                                    <div class="contact-group cg-address">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </span>
+                                            <span class="cg-h-text">Address</span>
+                                        </h4>
+                                        <p class="cg-text">Beaconsfield, Victoria 3807</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-widget-box fwb-menu">
+                        <div id="footer-menu">
+                            <ul id="menu-footer-menu" class="nav widget-nav-list">
+                                <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-79">
+                                    <a title="Home" href="index.html">Home</a>
+                                </li>
+                                <li id="menu-item-78" class="menu-item menu-item-type-post_type_archive menu-item-object-services menu-item-78">
+                                    <a title="Services" href="#">Services</a>
+                                </li>
+                                <li id="menu-item-428" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-428 active">
+                                    <a title="About Us" href="about-us.html">About Us</a>
+                                </li>
+                                <li id="menu-item-457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-457">
+                                    <a title="Blog" href="blog.html">Blog</a>
+                                </li>
+                                <li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83">
+                                    <a title="Contact Us" href="#">Contact Us</a>
+                                </li>
+                                <li id="menu-item-456" class="menu-item menu-item-type-post_type_archive menu-item-object-faqs menu-item-456">
+                                    <a title="FAQs" href="#">FAQs</a>
+                                </li>
+                                <li id="menu-item-81" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-81">
+                                    <a title="Privacy Policy" href="#">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================
+                 FOOTER BOTTOM / COPYRIGHT SECTION
+                 ============================================ -->
+            <div id="footer-bottom">
+                <div class="container">
+                    <div class="fb-1">
+                        <div class="copyright-note">Copyright © Yuthlogistics (Pvt) Ltd 2025</div>
+                        <div class="fb-site-creater">
+                            <div class="fb-sc-text">Solution by</div>
+                            <a href="#" target="_blank" title="Domedia.lk" class="fb-sc-link">
+                                <div class="fb-sc-l-img">
+                                    <img src="images/domediaLogo.jpg" alt="Domedia logo">
+                                </div>
+                                <div class="fb-sc-l-name">DoMedia</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============================================
+                 SCRIPTS SECTION
+                 ============================================ -->
+            <script type="speculationrules">
+                {
+                    "prefetch": [
+                        {
+                            "source": "document",
+                            "where": {
+                                "and": [
+                                    {
+                                        "href_matches": "\/*"
+                                    },
+                                    {
+                                        "not": {
+                                            "href_matches": [
+                                                "\/wp-*.php",
+                                                "\/wp-admin\/*",
+                                                "\/wp-content\/uploads\/*",
+                                                "\/wp-content\/*",
+                                                "\/wp-content\/plugins\/*",
+                                                "\/wp-content\/themes\/YuthLogistics\/*",
+                                                "\/*\\?(.+)"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "not": {
+                                            "selector_matches": "a[rel~=\"nofollow\"]"
+                                        }
+                                    },
+                                    {
+                                        "not": {
+                                            "selector_matches": ".no-prefetch, .no-prefetch a"
+                                        }
+                                    }
+                                ]
+                            },
+                            "eagerness": "conservative"
+                        }
+                    ]
+                }
+            </script>
+        </div>
+        <script data-optimized="1" src="javascript.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                if (typeof jQuery === "undefined") {
+                    return;
+                }
+                var $ = jQuery;
+                if (typeof $.fn.owlCarousel === "undefined") {
+                    return;
+                }
+                var $carousel = $(".ph-svs-s-1.owl-carousel");
+                if (!$carousel.length) {
+                    return;
+                }
+                var $nav = $(".ph-svs-nav");
+                if (!$nav.length) {
+                    return;
+                }
+                var bindNavEvents = function () {
+                    $nav.find(".ph-svs-prev").off("click.phNav").on("click.phNav", function (event) {
+                        event.preventDefault();
+                        $carousel.trigger("prev.owl.carousel");
+                    });
+                    $nav.find(".ph-svs-next").off("click.phNav").on("click.phNav", function (event) {
+                        event.preventDefault();
+                        $carousel.trigger("next.owl.carousel");
+                    });
+                };
+                if ($carousel.hasClass("owl-loaded")) {
+                    bindNavEvents();
+                } else {
+                    $carousel.on("initialized.owl.carousel", function () {
+                        bindNavEvents();
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>

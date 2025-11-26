@@ -170,6 +170,7 @@ add_action( 'init', 'youth_logistic_register_service_post_type' );
  * Render all service cards for the owl carousel.
  *
  * Each card renders:
+ * - Sprite icon (from ACF field service_icon_class)
  * - Title
  * - Excerpt
  * - Read more link to the single service post
@@ -196,28 +197,17 @@ function services() {
             $service_link  = get_permalink();
             $service_title = get_the_title();
             $service_copy  = get_the_excerpt() ?: wp_trim_words( wp_strip_all_tags( get_the_content() ), 30 );
-            $image_html    = '';
-
-            if ( has_post_thumbnail() ) {
-                $image_html = get_the_post_thumbnail(
-                    get_the_ID(),
-                    'full',
-                    array(
-                        'class' => 'ph-svs-s-s-icon',
-                    )
-                );
-            }
+            $icon_class    = get_field( 'service_icon_class', get_the_ID() ) ?: 'three-trucks-parallel';
             ?>
             <div class="ph-svs-s-s-0">
-                <a href="<?php echo esc_url( $service_link ); ?>" title="<?php echo esc_attr( $service_title ); ?>" class="ph-svs-s-single bagels-pos-relative ">
-                    <?php echo $image_html; ?>
+                <a href="<?php echo esc_url( $service_link ); ?>" title="<?php echo esc_attr( $service_title ); ?>" class="ph-svs-s-single bagels-pos-relative">
+                    <div class="ph-svs-s-s-icon bagels-filter-black-to-red bagels-sprite <?php echo esc_attr( $icon_class ); ?>"></div>
+                    <div class="ph-svs-s-s-icon-large bagels-filter-black-to-red bagels-sprite bagels-pos-absolute <?php echo esc_attr( $icon_class ); ?>"></div>
                     <h4 class="ph-svs-s-s-title bagels-trans-p-2 bagels-block-title bagels-ff-gilroy-bold"><?php echo esc_html( $service_title ); ?></h4>
                     <p class="ph-svs-s-s-dscr bagels-trans-p-2"><?php echo esc_html( $service_copy ); ?></p>
                     <div class="ph-svs-s-s-link">
                         <span class="ph-svs-s-s-l-1"><?php esc_html_e( 'Read more', 'youth-logistic' ); ?></span>
-                        <span class="ph-svs-s-s-l-icon">
-                            <i class="fas fa-angle-double-right"></i>
-                        </span>
+                        <span class="ph-svs-s-s-l-icon"><i class="fas fa-angle-double-right"></i></span>
                     </div>
                 </a>
             </div>
@@ -300,7 +290,7 @@ function why_choose_us() {
         ?>
         <div class="ph-sts-s-single" data-aos="fade-up" data-aos-delay="<?php echo esc_attr( $delay ); ?>">
             <div class="ph-sts-s-s-i-0 bagels-pos-relative">
-                <div class="ph-sts-s-s-icon bagels-sprite bagels-pos-relative bagels-filter-black-to-white <?php echo esc_attr( $icon_class ); ?>"></div>
+                <div class="ph-sts-s-s-icon bagels-sprite bagels-pos-relative bagels-filter-black-to-red <?php echo esc_attr( $icon_class ); ?>"></div>
                 <div class="ph-sts-s-s-i-stroke bagels-pos-absolute bagels-center-x"></div>
             </div>
             <div class="ph-sts-s-s-title bagels-ff-gilroy-bold"><?php echo esc_html( $stat_title ); ?></div>
