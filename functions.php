@@ -53,6 +53,11 @@ function youth_logistic_assets() {
         filemtime( get_template_directory() . '/javascript.js' ),
         true
     );
+
+    // Add inline CSS to fix sprite path dynamically
+    $sprite_url = get_template_directory_uri() . '/images/icon-sprite.png';
+    $custom_css = ".bagels-sprite { background-image: url('{$sprite_url}') !important; }";
+    wp_add_inline_style( 'youth-logistic-main', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'youth_logistic_assets' );
 

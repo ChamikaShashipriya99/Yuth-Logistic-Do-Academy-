@@ -13364,7 +13364,7 @@ template {
 }
 
 .bagels-sprite {
-    background-image: url('/wp-content/themes/YuthLogistics/framework/assets/images/icon-sprite.png');
+    background-image: url('/wp-content/themes/Youth Logistic/images/icon-sprite.png');
     background-size: 390px;
     background-position: 0 0;
     background-repeat: no-repeat
@@ -19089,7 +19089,7 @@ img.aligncenter {
 .ph-testimonials .ph-tmns-s-description:after {
     position: absolute;
     content: "";
-    background-image: url('/wp-content/themes/YuthLogistics/assets/theme-images/icon-sprite.png');
+    background-image: url('/wp-content/themes/Youth Logistic/images/icon-sprite.png');
     width: 105px;
     height: 105px;
     bottom: 3px;
