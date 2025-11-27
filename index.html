@@ -20,6 +20,111 @@
             .bagels-sprite {
                 background-image: url('images/icon-sprite.png') !important;
             }
+            
+            /* Contact Popup Form Styles */
+            .contact-popup-form {
+                display: none;
+                background: #1a1a1a;
+                padding: 40px 50px;
+                max-width: 600px;
+                width: 100%;
+                border-radius: 8px;
+            }
+            .contact-popup-form .cpf-subtitle {
+                color: #fff;
+                font-size: 14px;
+                text-align: center;
+                margin-bottom: 5px;
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+            .contact-popup-form .cpf-subtitle::before,
+            .contact-popup-form .cpf-subtitle::after {
+                content: '—';
+                margin: 0 10px;
+                color: #999;
+            }
+            .contact-popup-form .cpf-title {
+                color: #fff;
+                font-size: 32px;
+                text-align: center;
+                margin-bottom: 30px;
+                font-weight: 700;
+                font-style: italic;
+            }
+            .contact-popup-form .cpf-row {
+                display: flex;
+                gap: 15px;
+                margin-bottom: 15px;
+            }
+            .contact-popup-form .cpf-row.cpf-full {
+                flex-direction: column;
+            }
+            .contact-popup-form .cpf-field {
+                flex: 1;
+            }
+            .contact-popup-form input,
+            .contact-popup-form select,
+            .contact-popup-form textarea {
+                width: 100%;
+                padding: 14px 18px;
+                border: 1px solid #444;
+                border-radius: 6px;
+                background: #fff;
+                font-size: 15px;
+                color: #333;
+                font-family: inherit;
+                transition: border-color 0.3s ease;
+            }
+            .contact-popup-form input::placeholder,
+            .contact-popup-form textarea::placeholder {
+                color: #999;
+            }
+            .contact-popup-form input:focus,
+            .contact-popup-form select:focus,
+            .contact-popup-form textarea:focus {
+                outline: none;
+                border-color: #e74c3c;
+            }
+            .contact-popup-form textarea {
+                min-height: 120px;
+                resize: vertical;
+            }
+            .contact-popup-form select {
+                appearance: none;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: right 15px center;
+                padding-right: 40px;
+                cursor: pointer;
+            }
+            .contact-popup-form .cpf-submit {
+                width: 100%;
+                padding: 16px;
+                background: #e74c3c;
+                color: #fff;
+                border: none;
+                border-radius: 30px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background 0.3s ease;
+                margin-top: 10px;
+            }
+            .contact-popup-form .cpf-submit:hover {
+                background: #c0392b;
+            }
+            @media (max-width: 576px) {
+                .contact-popup-form {
+                    padding: 30px 25px;
+                }
+                .contact-popup-form .cpf-row {
+                    flex-direction: column;
+                }
+                .contact-popup-form .cpf-title {
+                    font-size: 24px;
+                }
+            }
         </style>
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script>
@@ -173,7 +278,7 @@
                                     <a title="FAQs" href=" ">FAQs</a>
                                 </li>
                                 <li id="menu-item-618" class="vc-theme-button menu-item menu-item-type-post_type menu-item-object-page menu-item-618">
-                                    <a title="Contact Us" href=" "">Contact Us</a>
+                                    <a title="Contact Us" href="#contact-popup" data-fancybox>Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -220,7 +325,7 @@
                         <a title="FAQs" href=" ">FAQs</a>
                     </li>
                     <li id="menu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91">
-                        <a title="Contact Us" href=" ">Contact Us</a>
+                        <a title="Contact Us" href="#contact-popup" data-fancybox>Contact Us</a>
                     </li>
                     <li id="menu-item-89" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-89">
                         <a title="Privacy Policy" href=" ">Privacy Policy</a>
@@ -583,7 +688,7 @@
                         </div>
                         <div class="cta-button">
                             <div class="vc-theme-button  ">
-                                <a title="Contact Us" target="_self" href=" " data-fancybox="">Contact Us</a>
+                                <a title="Contact Us" href="#contact-popup" data-fancybox>Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -653,7 +758,7 @@
                                     <a title="Blog" href="blog.html">Blog</a>
                                 </li>
                                 <li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83">
-                                    <a title="Contact Us" href=" ">Contact Us</a>
+                                    <a title="Contact Us" href="#contact-popup" data-fancybox>Contact Us</a>
                                 </li>
                                 <li id="menu-item-456" class="menu-item menu-item-type-post_type_archive menu-item-object-faqs menu-item-456">
                                     <a title="FAQs" href=" ">FAQs</a>
@@ -684,6 +789,50 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- ============================================
+                 CONTACT POPUP FORM (Hidden - triggered by FancyBox)
+                 ============================================ -->
+            <div id="contact-popup" class="contact-popup-form">
+                <p class="cpf-subtitle">Get In Touch</p>
+                <h2 class="cpf-title">Book Your Logistics</h2>
+                <form id="contact-form" action="#" method="post">
+                    <div class="cpf-row">
+                        <div class="cpf-field">
+                            <input type="text" name="first_name" placeholder="First Name*" required>
+                        </div>
+                        <div class="cpf-field">
+                            <input type="text" name="last_name" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="cpf-row">
+                        <div class="cpf-field">
+                            <input type="tel" name="phone" placeholder="Phone*" required>
+                        </div>
+                        <div class="cpf-field">
+                            <input type="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="cpf-row cpf-full">
+                        <div class="cpf-field">
+                            <select name="service" required>
+                                <option value="" disabled selected>What service do you require?</option>
+                                <option value="tailgate-haul">Tailgate Haul & Truck with Forklift Service</option>
+                                <option value="forklift-hire">Onsite Forklift Hire</option>
+                                <option value="same-day-delivery">Metro & Regional Same-Day Delivery</option>
+                                <option value="pallet-transport">Pallet Transport</option>
+                                <option value="point-a-to-b">Point A to B Transport</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cpf-row cpf-full">
+                        <div class="cpf-field">
+                            <textarea name="message" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="cpf-submit">Submit</button>
+                </form>
             </div>
 
             <!-- ============================================
