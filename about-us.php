@@ -126,14 +126,6 @@ get_header();
                         <?php echo services(); ?>
                     </div>
                 </div>
-                <!-- View All Services Button -->
-                <div class="ph-svs-read-more txt-center" style="margin-top: 30px;">
-                    <div class="vc-theme-button vc-tb-center">
-                        <a title="View All Services" target="_self" href="<?php echo esc_url( get_post_type_archive_link( 'service' ) ); ?>">
-                            View All Services <i class="fas fa-angle-double-right"></i>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
