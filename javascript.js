@@ -8860,7 +8860,6 @@ function(t, e) {
         }
     }
     new initLibs();
-    new triggerMainMenuButtonPopup();
     new initHomeServicesSliderActions();
     new initSinServiceRelServicesSliderActions();
     new initAboutUsServicesSliderActions();
