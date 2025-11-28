@@ -14856,8 +14856,8 @@ span.wpcf7-not-valid-tip {
     top: 37%;
     transform: translateX(-50%);
     font-size: 11px;
-    font-family: 'Font Awesome 5 Pro';
-    font-family: 'Font Awesome 6 Pro';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f078";
     line-height: 1;
     pointer-events: none;
@@ -14865,9 +14865,6 @@ span.wpcf7-not-valid-tip {
     font-size: 17px
 }
 
-.theme-contact-form>.wpcf7-spinner {
-    display: none
-}
 
 .has-spinner .wpcf7-spinner {
     position: absolute;

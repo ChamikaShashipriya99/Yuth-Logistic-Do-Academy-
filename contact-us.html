@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog – Youth Logistic</title>
+        <meta name="robots" content="max-image-preview:large"/>
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+              integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+              crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="icon" href="images/titelIcon.png"/>
+    </head>
+    
+    <body class="home wp-singular page-template-default page blog-template">
+        <div class="body-wrap">
+            
+            <!-- ==============================================================
+                 HEADER / NAVIGATION
+                 ============================================================== -->
+            <nav class="navbar navbar-fixed-top navbar-default" id="site-header">
+                <div class="container">
+                    <div class="flex-parent bagels-trans-p-2">
+                        <!-- Logo and Mobile Toggle -->
+                        <div class="navbar-header">
+                            <a class="navbar-brand header-logo" href="index.html">
+                                <img class="bagels-trans-p-2" src="images/Logo.svg" alt="Yuth Logistics">
+                            </a>
+                            <div class="nh-1">
+                                <!-- Tablet Contact Info -->
+                                <div class="contact-info-bar style-2 visible-sm">
+                                    <div class="cib-1">
+                                        <div class="contact-group">
+                                            <h4 class="cg-heading">
+                                                <span class="cg-h-icon">
+                                                    <i class="fas fa-phone"></i>
+                                                </span>
+                                                <span class="cg-h-text">Hotline</span>
+                                            </h4>
+                                            <p class="cg-text">
+                                                <a href="tel:+0423030433">+042 30 30 433</a>
+                                            </p>
+                                        </div>
+                                        <div class="contact-group">
+                                            <h4 class="cg-heading">
+                                                <span class="cg-h-icon">
+                                                    <i class="fas fa-envelope"></i>
+                                                </span>
+                                                <span class="cg-h-text">Email</span>
+                                            </h4>
+                                            <p class="cg-text">
+                                                <a href="mailto:admin@yuthlogistics.com.au">admin@yuthlogistics.com.au</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Mobile Contact Info -->
+                                <div class="contact-info-bar style-3 visible-xs">
+                                    <div class="cib-1">
+                                        <div class="contact-group">
+                                            <h4 class="cg-heading">
+                                                <a href="tel:+0423030433" title="Phone">
+                                                    <span class="cg-h-icon">
+                                                        <i class="fas fa-phone"></i>
+                                                    </span>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Hamburger Menu -->
+                                <a href="#" data-sidebar="left-sidebar" class="sidebar-toggler header-ham-icon visible-xs visible-sm" title="Toggle menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Desktop Navigation -->
+                        <div class="collapse navbar-collapse" id="main-navbar">
+                            <!-- Top Bar Contact Info -->
+                            <div class="contact-info-bar style-1 bagels-trans-p-2">
+                                <div class="cib-1">
+                                    <div class="contact-group">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-icon">
+                                                <i class="fas fa-phone"></i>
+                                            </span>
+                                            <span class="cg-h-text">Hotline</span>
+                                        </h4>
+                                        <p class="cg-text">
+                                            <a href="tel:+0423030433">+042 30 30 433</a>
+                                        </p>
+                                    </div>
+                                    <div class="contact-group">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-icon">
+                                                <i class="fas fa-envelope"></i>
+                                            </span>
+                                            <span class="cg-h-text">Email</span>
+                                        </h4>
+                                        <p class="cg-text">
+                                            <a href="mailto:admin@yuthlogistics.com.au">admin@yuthlogistics.com.au</a>
+                                        </p>
+                                    </div>
+                                    <div class="contact-group">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-text">Follow us on</span>
+                                        </h4>
+                                        <ul class="cg-socials">
+                                            <li>
+                                                <a class="cg-s-icon" href="#" target="_blank" rel="noopener" title="Facebook">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="cg-s-icon" href="#" target="_blank" rel="noopener" title="Instagram">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="cg-s-icon" href="#" target="_blank" rel="noopener" title="Tiktok">
+                                                    <i class="fab fa-tiktok"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Main Menu -->
+                            <ul id="menu-header-menu" class="nav navbar-nav navbar-right">
+                                <li class="menu-item active">
+                                    <a title="Home" href="index.html">Home</a>
+                                </li>
+                                <li class="menu-item dropdown menu-item-has-children">
+                                    <a title="Services" href="#" class="dropdown-toggle" aria-haspopup="true">
+                                        Services <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a title="Tailgate Haul &amp; Truck with Forklift Service" href="#">Tailgate Haul &amp; Truck with Forklift Service</a></li>
+                                        <li><a title="Onsite Forklift Hire" href="#">Onsite Forklift Hire</a></li>
+                                        <li><a title="Metro &amp; Regional Same-Day Delivery" href="#">Metro &amp; Regional Same-Day Delivery</a></li>
+                                        <li><a title="Pallet Transport" href="#">Pallet Transport</a></li>
+                                        <li><a title="Point A to B Transport" href="#">Point A to B Transport</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a title="About Us" href="#">About Us</a>
+                                </li>
+                                <li class="menu-item active current-menu-item">
+                                    <a title="Blog" href="blog.html">Blog</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a title="FAQs" href="#">FAQs</a>
+                                </li>
+                                <li class="vc-theme-button menu-item">
+                                    <a title="Contact Us" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- ==============================================================
+                 MOBILE SIDEBAR NAVIGATION
+                 ============================================================== -->
+            <div class="sidebar-nav visible-xs visible-sm" id="left-sidebar">
+                <ul id="menu-mobile-menu" class="nav navbar-nav navbar-right">
+                    <li class="menu-item">
+                        <a title="Home" href="index.html">Home</a>
+                    </li>
+                    <li class="menu-item dropdown menu-item-has-children">
+                        <a title="Services" href="#" data-toggle="dropdown">
+                            Services <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a title="Tailgate Haul &amp; Truck with Forklift Service" href="#">Tailgate Haul &amp; Truck with Forklift Service</a></li>
+                            <li><a title="Onsite Forklift Hire" href="#">Onsite Forklift Hire</a></li>
+                            <li><a title="Metro &amp; Regional Same-Day Delivery" href="#">Metro &amp; Regional Same-Day Delivery</a></li>
+                            <li><a title="Pallet Transport" href="#">Pallet Transport</a></li>
+                            <li><a title="Point A to B Transport" href="#">Point A to B Transport</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a title="About Us" href="#">About Us</a>
+                    </li>
+                    <li class="menu-item active current-menu-item">
+                        <a title="Blog" href="blog.html">Blog</a>
+                    </li>
+                    <li class="menu-item">
+                        <a title="FAQs" href="#">FAQs</a>
+                    </li>
+                    <li class="menu-item">
+                        <a title="Contact Us" href="#">Contact Us</a>
+                    </li>
+                    <li class="menu-item">
+                        <a title="Privacy Policy" href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-overlay"></div>
+
+            <!-- ==============================================================
+                 PAGE HEADER BANNER
+                 ============================================================== -->
+            <div class="page-header-banner bagels-overlay ">
+                <div class="phb-bg"></div>
+                <div class="container phb-container bagels-pos-relative">
+                    <div class="phb-content">
+                        <h1 class="phb-heading bagels-ff-gilroy-bold-alt">Contact Us</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==============================================================
+                 CONTACT FORM SECTION
+                 Main contact form area replacing the previous popup functionality.
+                 ============================================================== -->
+            <div class="contact-form-section page-container pg-temp-contact">
+                <div class="container">
+                    <!-- Section Header/Title -->
+                    <div class="row">
+                        <div class="col-md-12">
+                             <div class="vc-theme-title vc-tt-align-center vc-tt-dark">
+                                <div class="vc-tt-sub-title">
+                                    <div class="vc-tt-st-1">Get In Touch</div>
+                                </div>
+                                <h2 class="vc-tt-title">Book Your Logistics</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Container -->
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="ptc-form">
+                                <!-- WPCF7 Form Start -->
+                                <div class="wpcf7 js" id="wpcf7-f5-o1" lang="en-US" dir="ltr" data-wpcf7-id="5">
+                                    <div class="screen-reader-response">
+                                        <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                        <ul></ul>
+                                    </div>
+                                    
+                                    <form action="/#wpcf7-f5-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+                                        <!-- Hidden Input Fields -->
+                                        <div style="display: none;">
+                                            <input type="hidden" name="_wpcf7" value="5">
+                                            <input type="hidden" name="_wpcf7_version" value="6.0.5">
+                                            <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5-o1">
+                                            <input type="hidden" name="_wpcf7_container_post" value="0">
+                                            <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                                        </div>
+                                        
+                                        <!-- Visible Form Fields -->
+                                        <div class="theme-contact-form">
+                                            <!-- Name Row -->
+                                            <div class="row tcf-l-1">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 fname">
+                                                    <p>
+                                                        <span class="wpcf7-form-control-wrap" data-name="fname">
+                                                            <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="First Name*" value="" type="text" name="fname">
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12 lname">
+                                                    <p>
+                                                        <span class="wpcf7-form-control-wrap" data-name="lname">
+                                                            <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Last Name" value="" type="text" name="lname">
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Phone & Email Row -->
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 phone">
+                                                    <p>
+                                                        <span class="wpcf7-form-control-wrap" data-name="phone-number">
+                                                            <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone*" value="" type="text" name="phone-number">
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12 email">
+                                                    <p>
+                                                        <span class="wpcf7-form-control-wrap" data-name="email-address">
+                                                            <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email" aria-invalid="false" placeholder="Email" value="" type="email" name="email-address">
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Service Selection Row -->
+                                            <div class="row">
+                                                <div class="col-md-12 field-select">
+                                                    <p>
+                                                        <span class="wpcf7-form-control-wrap" data-name="service">
+                                                            <select name="service" id="service-options" title="Select Service" style="color: rgb(155, 153, 153);">
+                                                                <option value="" style="color: rgb(155, 153, 153);">What service do you require?</option>
+                                                                <option value="Metro &amp; Regional Same-Day Delivery" style="color: rgb(38, 38, 38);">Metro &amp; Regional Same-Day Delivery</option>
+                                                                <option value="Onsite Forklift Hire" style="color: rgb(38, 38, 38);">Onsite Forklift Hire</option>
+                                                                <option value="Pallet Transport" style="color: rgb(38, 38, 38);">Pallet Transport</option>
+                                                                <option value="Point A to B Transport" style="color: rgb(38, 38, 38);">Point A to B Transport</option>
+                                                                <option value="Tailgate Haul &amp; Truck with Forklift Service" style="color: rgb(38, 38, 38);">Tailgate Haul &amp; Truck with Forklift Service</option>
+                                                            </select>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Message Box Row -->
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <p>
+                                                        <span class="wpcf7-form-control-wrap" data-name="message">
+                                                            <textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message" name="message"></textarea>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <!-- Submit Button Row -->
+                                            <div class="row has-spinner">
+                                                <div class="col-md-12">
+                                                    <p>
+                                                        <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Submit">
+                                                        <span class="wpcf7-spinner"></span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <span class="wpcf7-spinner"></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==============================================================
+                 FOOTER WIDGETS
+                 ============================================================== -->
+            <div id="footer-widget-area" class="h-p-ul-m-0">
+                <div class="container">
+                    <!-- Brand Widget -->
+                    <div class="footer-widget-box fwb-brands h-p-ul-m-0">
+                        <div class="fwb-ci-1"></div>
+                    </div>
+                    
+                    <!-- Contact Info Widget -->
+                    <div class="footer-widget-box fwb-contact-info h-p-ul-m-0">
+                        <div class="fwb-ci-1">
+                            <h2 class="fwb-ci-title">Contact Us</h2>
+                            <div class="contact-info-bar style-3">
+                                <div class="cib-1 cib-has-whatsapp">
+                                    <div class="contact-group cg-two-nums">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-icon">
+                                                <i class="fas fa-phone-alt"></i>
+                                            </span>
+                                            <span class="cg-h-text">Hotline</span>
+                                        </h4>
+                                        <p class="cg-text">
+                                            <a class="cg-t-link cg-t-l-phone" href="">+042 30 30 433</a>
+                                        </p>
+                                    </div>
+                                    <div class="contact-group">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-icon">
+                                                <i class="fas fa-envelope"></i>
+                                            </span>
+                                            <span class="cg-h-text">Email</span>
+                                        </h4>
+                                        <p class="cg-text">
+                                            <a href="">admin@yuthlogistics.com.au</a>
+                                        </p>
+                                    </div>
+                                    <div class="contact-group cg-address">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </span>
+                                            <span class="cg-h-text">Address</span>
+                                        </h4>
+                                        <p class="cg-text">Beaconsfield, Victoria 3807</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Footer Menu Widget -->
+                    <div class="footer-widget-box fwb-menu">
+                        <div id="footer-menu">
+                            <ul id="menu-footer-menu" class="nav widget-nav-list">
+                                <li class="menu-item">
+                                    <a title="Home" href="index.html">Home</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a title="Services" href="#">Services</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a title="About Us" href="#">About Us</a>
+                                </li>
+                                <li class="menu-item current-menu-item">
+                                    <a title="Blog" href="blog.html">Blog</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a title="Contact Us" href="#">Contact Us</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a title="FAQs" href="#">FAQs</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a title="Privacy Policy" href="#">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==============================================================
+                 FOOTER BOTTOM (Copyright & Credits)
+                 ============================================================== -->
+            <div id="footer-bottom">
+                <div class="container">
+                    <div class="fb-1">
+                        <div class="copyright-note">Copyright © Yuthlogistics (Pvt) Ltd 2025</div>
+                        <div class="fb-site-creater">
+                            <div class="fb-sc-text">Solution by</div>
+                            <a href="#" target="_blank" title="Domedia.lk" class="fb-sc-link">
+                                <div class="fb-sc-l-img">
+                                    <img src="images/domediaLogo.jpg" alt="Domedia logo">
+                                </div>
+                                <div class="fb-sc-l-name">DoMedia</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scripts -->
+            <script src="js/jquery.min.js"></script>
+            <script data-optimized="1" src="javascript.js"></script>
+        </div>
+    </body>
+</html>
