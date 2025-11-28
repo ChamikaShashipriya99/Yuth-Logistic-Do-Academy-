@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Contact
+ * Template Name: Contact page
  *
  * Contact page template that renders the hero banner plus the
  * in-page Contact Form 7 instance used across the marketing site.
@@ -16,9 +16,7 @@ get_header();
     <div class="phb-bg"></div>
     <div class="container phb-container bagels-pos-relative">
         <div class="phb-content">
-            <h1 class="phb-heading bagels-ff-gilroy-bold-alt">
-                <?php echo esc_html( get_field( 'contact_page_heading' ) ?: 'Contact Us' ); ?>
-            </h1>
+            <h1 class="phb-heading bagels-ff-gilroy-bold-alt">Contact Us</h1>
         </div>
     </div>
 </div>
@@ -32,13 +30,9 @@ get_header();
             <div class="col-md-12">
                 <div class="vc-theme-title vc-tt-align-center vc-tt-dark">
                     <div class="vc-tt-sub-title">
-                        <div class="vc-tt-st-1">
-                            <?php echo esc_html( get_field( 'contact_page_subheading' ) ?: 'Get In Touch' ); ?>
-                        </div>
+                        <div class="vc-tt-st-1">Get In Touch</div>
                     </div>
-                    <h2 class="vc-tt-title">
-                        <?php echo esc_html( get_field( 'contact_page_title' ) ?: 'Book Your Logistics' ); ?>
-                    </h2>
+                    <h2 class="vc-tt-title">Book Your Logistics</h2>
                 </div>
             </div>
         </div>
@@ -47,12 +41,7 @@ get_header();
             <div class="col-md-8 col-md-offset-2">
                 <div class="ptc-form">
                     <?php
-                    $contact_form_shortcode = get_field( 'contact_form_shortcode' );
-                    if ( empty( $contact_form_shortcode ) ) {
-                        $contact_form_shortcode = '[contact-form-7 id="5" title="Contact form"]';
-                    }
-
-                    echo do_shortcode( $contact_form_shortcode ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+                    echo do_shortcode( '[contact-form-7 id="ad7501c" title="Contact form 1"]' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
                     ?>
                 </div>
             </div>
