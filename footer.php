@@ -109,7 +109,7 @@ $footer_solution_logo_alt = $footer_solution_logo['alt'] ?? ( $footer_solution_n
                 </div>
                 <div class="cta-button">
                     <div class="vc-theme-button">
-                        <a title="<?php echo esc_attr( $cta_btn_text ); ?>" href="<?php echo esc_url( $cta_btn_link ); ?>" data-fancybox=""><?php echo esc_html( $cta_btn_text ); ?></a>
+                        <a title="<?php echo esc_attr( $cta_btn_text ); ?>" href="<?php echo esc_url( $cta_btn_link ); ?>"><?php echo esc_html( $cta_btn_text ); ?></a>
                     </div>
                 </div>
             </div>
