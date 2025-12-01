@@ -41,7 +41,7 @@ get_header();
             <div class="col-md-8 col-md-offset-2">
                 <div class="ptc-form">
                     <?php
-                    echo do_shortcode( '[contact-form-7 id="ad7501c" title="Contact form 1"]' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+                    echo do_shortcode( '[contact-form-7 id="fed605b" title="Contact from"]' ); // CF7 short code for contact form 1
                     ?>
                 </div>
             </div>
