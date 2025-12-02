@@ -96,6 +96,9 @@ function youth_logistic_nav_item_classes( $classes, $item ) {
 }
 add_filter( 'nav_menu_css_class', 'youth_logistic_nav_item_classes', 10, 2 );
 
+/**
+ * Add attributes for dropdown toggles in navigation menus.
+ */
 function youth_logistic_nav_link_attributes( $atts, $item, $args, $depth ) {
     if ( in_array( 'menu-item-has-children', $item->classes, true ) && 0 === $depth ) {
         $existing_class   = isset( $atts['class'] ) ? $atts['class'] . ' ' : '';
@@ -106,6 +109,9 @@ function youth_logistic_nav_link_attributes( $atts, $item, $args, $depth ) {
 }
 add_filter( 'nav_menu_link_attributes', 'youth_logistic_nav_link_attributes', 10, 4 );
 
+/**
+ * Add classes to submenu lists.
+ */
 function youth_logistic_submenu_classes( $classes ) {
     $classes[] = 'dropdown-menu';
     return $classes;
