@@ -295,18 +295,23 @@ function why_choose_us() {
         return '';
     }
 
-    $delay = 0;
+    $delay        = 0;
+    $icon_classes = array( 'certificate', 'mansion', 'flatbet-with-hook', 'clipboard-with-shield' );
+    $counter      = 0;
     ob_start();
 
     while ( $stats_query->have_posts() ) {
         $stats_query->the_post();
-        $icon_class = get_field( 'stat_icon_class', get_the_ID() ) ?: '';
+        $icon_class = get_field( 'stat_icon_class', get_the_ID() );
+        if ( ! $icon_class ) {
+            $icon_class = $icon_classes[ $counter % count( $icon_classes ) ];
+        }
         $stat_title = get_the_title();
         $stat_copy  = get_the_excerpt() ?: wp_trim_words( wp_strip_all_tags( get_the_content() ), 20 );
         ?>
         <div class="ph-sts-s-single" data-aos="fade-up" data-aos-delay="<?php echo esc_attr( $delay ); ?>">
             <div class="ph-sts-s-s-i-0 bagels-pos-relative">
-                <div class="ph-sts-s-s-icon bagels-sprite bagels-pos-relative bagels-filter-black-to-red <?php echo esc_attr( $icon_class ); ?>"></div>
+                <div class="ph-sts-s-s-icon bagels-sprite bagels-pos-relative bagels-filter-black-to-white <?php echo esc_attr( $icon_class ); ?>"></div>
                 <div class="ph-sts-s-s-i-stroke bagels-pos-absolute bagels-center-x"></div>
             </div>
             <div class="ph-sts-s-s-title bagels-ff-gilroy-bold"><?php echo esc_html( $stat_title ); ?></div>
@@ -314,6 +319,7 @@ function why_choose_us() {
         </div>
         <?php
         $delay += 100;
+        $counter++;
     }
 
     wp_reset_postdata();
