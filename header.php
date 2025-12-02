@@ -58,6 +58,18 @@ $header_social_follow_text = $header_page_id ? ( get_field( 'header_social_follo
 $header_facebook_url       = $header_page_id ? ( get_field( 'header_facebook_url', $header_page_id ) ?: '#' ) : '#'; // Get Facebook URL from ACF field, or use '#' as default link (empty link)
 $header_instagram_url       = $header_page_id ? ( get_field( 'header_instagram_url', $header_page_id ) ?: '#' ) : '#'; // Get Instagram URL from ACF field, or use '#' as default link
 $header_tiktok_url         = $header_page_id ? ( get_field( 'header_tiktok_url', $header_page_id ) ?: '#' ) : '#'; // Get TikTok URL from ACF field, or use '#' as default link
+
+/**
+ * SECTION: Icon classes.
+ *
+ * Allows admins to customize icon classes for contact info and social media icons.
+ * Icons can be changed to any Font Awesome or custom icon class.
+ */
+$header_phone_icon_class   = $header_page_id ? trim( (string) ( get_field( 'header_phone_icon_class', $header_page_id ) ?: '' ) ) : ''; // Get phone icon class from ACF field
+$header_email_icon_class   = $header_page_id ? trim( (string) ( get_field( 'header_email_icon_class', $header_page_id ) ?: '' ) ) : ''; // Get email icon class from ACF field
+$header_facebook_icon_class = $header_page_id ? trim( (string) ( get_field( 'header_facebook_icon_class', $header_page_id ) ?: '' ) ) : ''; // Get Facebook icon class from ACF field
+$header_instagram_icon_class = $header_page_id ? trim( (string) ( get_field( 'header_instagram_icon_class', $header_page_id ) ?: '' ) ) : ''; // Get Instagram icon class from ACF field
+$header_tiktok_icon_class  = $header_page_id ? trim( (string) ( get_field( 'header_tiktok_icon_class', $header_page_id ) ?: '' ) ) : ''; // Get TikTok icon class from ACF field
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); /* Output HTML lang attribute (e.g., lang="en-US") based on WordPress settings */ ?>>
@@ -91,7 +103,7 @@ $header_tiktok_url         = $header_page_id ? ( get_field( 'header_tiktok_url',
                                 <div class="contact-group">
                                     <h4 class="cg-heading">
                                         <span class="cg-h-icon">
-                                            <i class="fas fa-phone"></i>
+                                            <i class="<?php echo esc_attr( $header_phone_icon_class ); /* Output phone icon class, escaped for HTML attribute */ ?>"></i>
                                         </span>
                                         <span class="cg-h-text"><?php echo esc_html( $header_hotline_label ); /* Output hotline label, escaped for HTML (prevents XSS) */ ?></span>
                                     </h4>
@@ -102,7 +114,7 @@ $header_tiktok_url         = $header_page_id ? ( get_field( 'header_tiktok_url',
                                 <div class="contact-group">
                                     <h4 class="cg-heading">
                                         <span class="cg-h-icon">
-                                            <i class="fas fa-envelope"></i>
+                                            <i class="<?php echo esc_attr( $header_email_icon_class ); /* Output email icon class, escaped for HTML attribute */ ?>"></i>
                                         </span>
                                         <span class="cg-h-text"><?php echo esc_html( $header_email_label ); /* Output email label, escaped for HTML */ ?></span>
                                     </h4>
@@ -118,7 +130,7 @@ $header_tiktok_url         = $header_page_id ? ( get_field( 'header_tiktok_url',
                                     <h4 class="cg-heading">
                                         <a href="<?php echo esc_url( $header_hotline_link ); /* Output phone link for mobile click-to-call, escaped for URL */ ?>" title="Phone">
                                             <span class="cg-h-icon">
-                                                <i class="fas fa-phone"></i>
+                                                <i class="<?php echo esc_attr( $header_phone_icon_class ); /* Output phone icon class, escaped for HTML attribute */ ?>"></i>
                                             </span>
                                         </a>
                                     </h4>
@@ -139,7 +151,7 @@ $header_tiktok_url         = $header_page_id ? ( get_field( 'header_tiktok_url',
                             <div class="contact-group">
                                 <h4 class="cg-heading">
                                     <span class="cg-h-icon">
-                                        <i class="fas fa-phone"></i>
+                                        <i class="<?php echo esc_attr( $header_phone_icon_class ); /* Output phone icon class, escaped for HTML attribute */ ?>"></i>
                                     </span>
                                     <span class="cg-h-text"><?php echo esc_html( $header_hotline_label ); /* Output hotline label for desktop navbar, escaped for HTML */ ?></span>
                                 </h4>
@@ -150,7 +162,7 @@ $header_tiktok_url         = $header_page_id ? ( get_field( 'header_tiktok_url',
                             <div class="contact-group">
                                 <h4 class="cg-heading">
                                     <span class="cg-h-icon">
-                                        <i class="fas fa-envelope"></i>
+                                        <i class="<?php echo esc_attr( $header_email_icon_class ); /* Output email icon class, escaped for HTML attribute */ ?>"></i>
                                     </span>
                                     <span class="cg-h-text"><?php echo esc_html( $header_email_label ); /* Output email label for desktop navbar, escaped for HTML */ ?></span>
                                 </h4>
@@ -165,17 +177,17 @@ $header_tiktok_url         = $header_page_id ? ( get_field( 'header_tiktok_url',
                                 <ul class="cg-socials">
                                     <li>
                                         <a class="cg-s-icon" href="<?php echo esc_url( $header_facebook_url ); /* Output Facebook URL, escaped for URL security */ ?>" target="_blank" title="Facebook" rel="noopener">
-                                            <i class="fab fa-facebook-f"></i>
+                                            <i class="<?php echo esc_attr( $header_facebook_icon_class ); /* Output Facebook icon class, escaped for HTML attribute */ ?>"></i>
                                         </a>
                                     </li>
                                     <li>
                                         <a class="cg-s-icon" href="<?php echo esc_url( $header_instagram_url ); /* Output Instagram URL, escaped for URL security */ ?>" target="_blank" title="Instagram" rel="noopener">
-                                            <i class="fab fa-instagram"></i>
+                                            <i class="<?php echo esc_attr( $header_instagram_icon_class ); /* Output Instagram icon class, escaped for HTML attribute */ ?>"></i>
                                         </a>
                                     </li>
                                     <li>
                                         <a class="cg-s-icon" href="<?php echo esc_url( $header_tiktok_url ); /* Output TikTok URL, escaped for URL security */ ?>" target="_blank" title="Tiktok" rel="noopener">
-                                            <i class="fab fa-tiktok"></i>
+                                            <i class="<?php echo esc_attr( $header_tiktok_icon_class ); /* Output TikTok icon class, escaped for HTML attribute */ ?>"></i>
                                         </a>
                                     </li>
                                 </ul>
