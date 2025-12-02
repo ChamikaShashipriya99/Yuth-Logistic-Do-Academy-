@@ -69,6 +69,16 @@ $contact_address_label  = $cta_page_id ? get_field( 'contact_address_label', $ct
 $contact_address_text   = $cta_page_id ? get_field( 'contact_address_text', $cta_page_id ) : '';
 
 /**
+ * SECTION: Footer contact info icon classes.
+ *
+ * Allows admins to customize icon classes for contact info icons in the footer.
+ * Icons can be changed to any Font Awesome or custom icon class.
+ */
+$contact_phone_icon_class   = $cta_page_id ? trim( (string) ( get_field( 'contact_phone_icon_class', $cta_page_id ) ?: '' ) ) : ''; // Get phone icon class from ACF field
+$contact_email_icon_class   = $cta_page_id ? trim( (string) ( get_field( 'contact_email_icon_class', $cta_page_id ) ?: '' ) ) : ''; // Get email icon class from ACF field
+$contact_address_icon_class = $cta_page_id ? trim( (string) ( get_field( 'contact_address_icon_class', $cta_page_id ) ?: '' ) ) : ''; // Get address icon class from ACF field
+
+/**
  * SECTION: Footer bottom strip.
  *
  * Allows admins to adjust copyright text (year appended automatically), the "solution by"
@@ -130,7 +140,7 @@ $footer_solution_logo_alt = $footer_solution_logo['alt'] ?? ( $footer_solution_n
                             <div class="contact-group cg-two-nums">
                                 <h4 class="cg-heading">
                                     <span class="cg-h-icon">
-                                        <i class="fas fa-phone-alt"></i>
+                                        <i class="<?php echo esc_attr( $contact_phone_icon_class ); /* Output phone icon class, escaped for HTML attribute */ ?>"></i>
                                     </span>
                                     <span class="cg-h-text"><?php echo esc_html( $contact_hotline_label ); ?></span>
                                 </h4>
@@ -143,7 +153,7 @@ $footer_solution_logo_alt = $footer_solution_logo['alt'] ?? ( $footer_solution_n
                             <div class="contact-group">
                                 <h4 class="cg-heading">
                                     <span class="cg-h-icon">
-                                        <i class="fas fa-envelope"></i>
+                                        <i class="<?php echo esc_attr( $contact_email_icon_class ); /* Output email icon class, escaped for HTML attribute */ ?>"></i>
                                     </span>
                                     <span class="cg-h-text"><?php echo esc_html( $contact_email_label ); ?></span>
                                 </h4>
@@ -156,7 +166,7 @@ $footer_solution_logo_alt = $footer_solution_logo['alt'] ?? ( $footer_solution_n
                             <div class="contact-group cg-address">
                                 <h4 class="cg-heading">
                                     <span class="cg-h-icon">
-                                        <i class="fas fa-map-marker-alt"></i>
+                                        <i class="<?php echo esc_attr( $contact_address_icon_class ); /* Output address icon class, escaped for HTML attribute */ ?>"></i>
                                     </span>
                                     <span class="cg-h-text"><?php echo esc_html( $contact_address_label ); ?></span>
                                 </h4>
