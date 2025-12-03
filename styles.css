@@ -17326,8 +17326,7 @@ img.aligncenter {
 
 .single-faq .sfaq-question:before {
     content: "\f128";
-    font-family: 'Font Awesome 5 Pro';
-    font-family: 'Font Awesome 6 Pro';
+    font-family: "Font Awesome 5 Free";
     left: -27px;
     font-size: 21px;
     font-weight: 600;
