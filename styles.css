@@ -1,4 +1,27 @@
 /* ============================================
+   RESPONSIVE BREAKPOINT REFERENCE
+   
+   This file uses the following standard breakpoints throughout:
+   
+   Mobile (xs):      max-width: 767px
+   Tablet (sm):      768px - 991px (min-width: 768px and max-width: 991px)
+   Desktop (md):     992px - 1199px (min-width: 992px and max-width: 1199px)
+   Large Desktop (lg): min-width: 1200px
+   Extra Large:      min-width: 1920px
+   
+   Additional custom breakpoints used:
+   - max-width: 991px (Tablet and below)
+   - max-width: 1199px (Desktop and below)
+   - max-width: 1365px (Medium screens and below)
+   - max-width: 1439px (Large screens and below)
+   - max-width: 1679px (XL screens and below)
+   - min-width: 1366px (Large screens and above)
+   - min-width: 1440px (Extra Large screens and above)
+   - min-width: 1680px (XXL screens and above)
+   
+   ============================================ */
+
+/* ============================================
    FONT DEFINITIONS - ROBOTO & HEEBO
    Custom font imports for the theme
    ============================================ */
@@ -1916,18 +1939,23 @@ pre code {
     margin-left: auto
 }
 
+/* --- BOOTSTRAP CONTAINER RESPONSIVE BREAKPOINTS --- */
+
+/* Tablet: 768px and above */
 @media (min-width: 768px) {
     .container {
         width:750px
     }
 }
 
+/* Desktop: 992px and above */
 @media (min-width: 992px) {
     .container {
         width:970px
     }
 }
 
+/* Large Desktop: 1200px and above */
 @media (min-width: 1200px) {
     .container {
         width:1170px
@@ -7081,6 +7109,9 @@ button.close {
     display: none!important
 }
 
+/* --- BOOTSTRAP VISIBILITY UTILITIES - RESPONSIVE BREAKPOINTS --- */
+
+/* Mobile: 767px and below - Extra Small (xs) */
 @media (max-width: 767px) {
     .visible-xs {
         display:block!important
@@ -7117,6 +7148,7 @@ button.close {
     }
 }
 
+/* Tablet: 768px to 991px - Small (sm) */
 @media (min-width: 768px) and (max-width:991px) {
     .visible-sm {
         display:block!important
@@ -7153,6 +7185,7 @@ button.close {
     }
 }
 
+/* Desktop: 992px to 1199px - Medium (md) */
 @media (min-width: 992px) and (max-width:1199px) {
     .visible-md {
         display:block!important
@@ -7189,6 +7222,7 @@ button.close {
     }
 }
 
+/* Large Desktop: 1200px and above - Large (lg) */
 @media (min-width: 1200px) {
     .visible-lg {
         display:block!important
@@ -7225,24 +7259,30 @@ button.close {
     }
 }
 
+/* --- BOOTSTRAP HIDDEN UTILITIES - RESPONSIVE BREAKPOINTS --- */
+
+/* Hide on Mobile: 767px and below */
 @media (max-width: 767px) {
     .hidden-xs {
         display:none!important
     }
 }
 
+/* Hide on Tablet: 768px to 991px */
 @media (min-width: 768px) and (max-width:991px) {
     .hidden-sm {
         display:none!important
     }
 }
 
+/* Hide on Desktop: 992px to 1199px */
 @media (min-width: 992px) and (max-width:1199px) {
     .hidden-md {
         display:none!important
     }
 }
 
+/* Hide on Large Desktop: 1200px and above */
 @media (min-width: 1200px) {
     .hidden-lg {
         display:none!important
@@ -13604,18 +13644,24 @@ template {
     pointer-events: none
 }
 
+/* --- EXTRA LARGE CONTAINER BREAKPOINT --- */
+/* Extra Large Desktop: 1920px and above */
 @media (min-width: 1920px) {
     .container {
         width:1230px
     }
 }
 
+/* --- THEME SPECIFIC RESPONSIVE BREAKPOINTS --- */
+
+/* Mobile: 767px and below */
 @media (max-width: 767px) {
     .bagels-no-posts .bnp-text {
         font-size:27px
     }
 }
 
+/* Desktop: 992px and above */
 @media(min-width: 992px) {
     .trusted-brands .tb-single img {
         filter:grayscale(1);
@@ -13629,12 +13675,14 @@ template {
     }
 }
 
+/* Desktop and below: 1199px and below */
 @media(max-width: 1199px) {
     .trusted-brands .tb-1 {
         padding:30px 0
     }
 }
 
+/* Desktop: 992px and above - Hover effects */
 @media (min-width: 992px) {
     .bagels-float-on-hover:hover {
         transform:translateY(-10px) !important;
@@ -13642,12 +13690,14 @@ template {
     }
 }
 
+/* Extra Large Desktop: 1921px and above */
 @media (min-width: 1921px) {
     .bagels-vp-height {
         min-height:calc(1080px - 111px)
     }
 }
 
+/* Desktop and below: 1199px and below */
 @media (max-width: 1199px) {
     .vc-theme-title .vc-tt-title {
         font-size:50px
@@ -13662,6 +13712,7 @@ template {
     }
 }
 
+/* Tablet and below: 991px and below */
 @media (max-width: 991px) {
     .bagels-float-on-hover:active {
         transform:translateY(-10px)
@@ -13680,6 +13731,7 @@ template {
     }
 }
 
+/* Mobile: 767px and below */
 @media (max-width: 767px) {
     .bagels-vp-height {
         min-height:calc(667px - 130px)
@@ -13728,6 +13780,7 @@ template {
     }
 }
 
+/* Tablet only: 768px to 991px */
 @media (min-width: 768px) and (max-width:991px) {
     .vc-theme-title .vc-tt-title {
         font-size:45px
@@ -14893,6 +14946,7 @@ span.wpcf7-not-valid-tip {
     background-color: rgba(0,0,0,.65)
 }
 
+/* Tablet and above: 768px and above */
 @media (min-width: 768px) {
     .fancybox-container .wpcf7 form div.wpcf7-response-output,.fancybox-container .wpcf7 form div.wpcf7-validation-errors {
         position:absolute;
@@ -14900,6 +14954,7 @@ span.wpcf7-not-valid-tip {
     }
 }
 
+/* Mobile: 767px and below */
 @media (max-width: 767px) {
     .wpcf7 input[type=text],.wpcf7 input[type=email],.wpcf7 input[type=date],.wpcf7 input[type=tel],.wpcf7 input[type=url],.wpcf7 input[type=number],.wpcf7 input[type=file],.wpcf7 select,.wpcf7 textarea {
         height:52px;
@@ -14947,6 +15002,7 @@ span.wpcf7-not-valid-tip {
     padding: 25px
 }
 
+/* Tablet and above: 768px and above */
 @media (min-width: 768px) {
     #popup-quote {
         min-width:500px;
@@ -14954,6 +15010,7 @@ span.wpcf7-not-valid-tip {
     }
 }
 
+/* Tablet and below: 991px and below */
 @media(max-width: 991px) {
     .wpcf7 input,.wpcf7 textarea,.wpcf7 select {
         -webkit-appearance:none;
@@ -14999,6 +15056,9 @@ span.wpcf7-not-valid-tip {
     font-weight: 300
 }
 
+/* --- FOOTER CTA BANNER RESPONSIVE BREAKPOINTS --- */
+
+/* Desktop: 992px and above */
 @media(min-width: 992px) {
     .footer-cta-banner .cta-2 {
         max-width:545px
@@ -15021,6 +15081,7 @@ span.wpcf7-not-valid-tip {
     }
 }
 
+/* Large Desktop: 1200px and above */
 @media(min-width: 1200px) {
     .footer-cta-banner .cta-2 {
         max-width:570px
@@ -15039,6 +15100,7 @@ span.wpcf7-not-valid-tip {
     }
 }
 
+/* Medium screens and below: 1365px and below */
 @media(max-width: 1365px) {
     .footer-cta-banner.has-form .cta-banner-img {
         display:none
@@ -15053,6 +15115,7 @@ span.wpcf7-not-valid-tip {
     }
 }
 
+/* Tablet and below: 991px and below */
 @media(max-width: 991px) {
     .footer-cta-banner .cta-h-1 {
         font-size:39px
@@ -15063,6 +15126,7 @@ span.wpcf7-not-valid-tip {
     }
 }
 
+/* Mobile: 767px and below */
 @media(max-width: 767px) {
     .footer-cta-banner .cta-title {
         font-size:25px
@@ -15086,6 +15150,7 @@ span.wpcf7-not-valid-tip {
     }
 }
 
+/* Tablet only: 768px to 991px */
 @media (min-width: 768px) and (max-width:991px) {
     .footer-cta-banner .bagels-contact-form {
         max-width:550px;
