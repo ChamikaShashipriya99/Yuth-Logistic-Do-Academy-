@@ -19968,27 +19968,8 @@ a:hover,a:focus,.contact-group .cg-text a:hover,.ph-blogs .ph-bl-bb-b-b-cat,.ph-
     border-color: #231f20
 }
 
-.news-slider .news-box .news-image .date-box,.service-box .service-title,.vc-icon-box .icon-sec {
-    background-color: #231f20
-}
-
-.news-slider .news-box .news-content .news-title:hover,.gallery-filter ul li:hover,.gallery-filter ul li.current,.vc-info-box .info-heading a:hover,.vc-social-list.actual ul li a:hover {
-    color: #231f20
-}
-
-@media(max-width: 767px) {
-    .gallery-filter.dark ul li.current,.gallery-filter.light ul li.current {
-        background-color:#231f20
-    }
-
-    .gallery-filter.dark ul li,.gallery-filter.light ul li {
-        color: #231f20
-    }
-
-    .gallery-filter.dark ul li,.gallery-filter.light ul li.current {
-        border-color: #231f20
-    }
-}
+/* Removed unused CSS: .news-slider, .gallery-filter, .service-box, .vc-icon-box, .vc-info-box, .vc-social-list.actual
+   These classes are not used anywhere in the theme templates. */
 
 .vc-theme-button a,.vc-theme-button-pseudo {
     background-color: #f75353
@@ -20034,7 +20015,8 @@ a:hover,a:focus,.contact-group .cg-text a:hover,.ph-blogs .ph-bl-bb-b-b-cat,.ph-
     }
 }
 
-.testimonial-slider.dark .testi-box,.testimonial-slider.dark .owl-nav>div,#footer-bottom .fb-sc-link:focus {
+/* Removed unused CSS: .testimonial-slider - not used in templates */
+#footer-bottom .fb-sc-link:focus {
     color: #646464
 }
 
@@ -20075,55 +20057,27 @@ ul.pagination li.active a {
     background-color: #231f20
 }
 
-@media (min-width: 992px) {
-    .blog-sidebar .btn-search:hover {
-        border-color:#231f20;
-        background-color: #231f20
-    }
-}
+/* Removed unused CSS: .blog-sidebar .btn-search - not used in templates */
 
 @media (max-width: 991px) {
-    .blog-sidebar .btn-search:active {
-        border-color:#231f20;
-        background-color: #231f20
-    }
-
     .footer-cta-banner {
         background-color: #231f20
     }
 }
 
-.post-wrapper .post-content .post-link,.single-post .post-meta span,.single-post .post-meta span.post-author a,.single-post .tags a:hover,ul.list-border li a:hover,.comment-reply-link:hover,.comment-edit-link:hover {
+.post-wrapper .post-content .post-link {
     color: #231f20
-}
-
-.line-bottom:after {
-    border-color: #231f20
 }
 
 .post-wrapper .post-content .post-title a:hover,.post-wrapper .post-content .post-link:hover {
     color: #f75353
 }
 
-.woocommerce ul.products li.product h2 {
-    color: #646464
-}
+/* Removed unused CSS: .single-post, ul.list-border, .comment-reply-link, .comment-edit-link, .line-bottom
+   These classes are not used anywhere in the theme templates. */
 
-.woocommerce ul.products li.product h2:hover,.woocommerce ul.products li.product .price,ul.sidebar-list li span a:hover,ul.sidebar-list ul li span a:hover,.nav-cart .nav-cart-toggler:hover,.nav-cart.open .nav-cart-toggler,.woocommerce-mini-cart li .cart-item-count .amount,.woocommerce-mini-cart li .cart-item-title:hover,.mini-cart-wrapper .total .amount {
-    color: #231f20
-}
-
-.woocommerce span.onsale,.woocommerce ul.products li.product .button:hover,.woocommerce .woocommerce-MyAccount-navigation ul li.is-active,.mobile-cart-icon {
-    background-color: #231f20
-}
-
-.woocommerce #respond input#submit.alt,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.mini-cart-wrapper .buttons a {
-    background-color: #f75353
-}
-
-.woocommerce #respond input#submit.alt:hover,.woocommerce a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce input.button.alt:hover,.mini-cart-wrapper .buttons a:hover {
-    background-color: #a50f0f
-}
+/* Removed unused WooCommerce CSS - WooCommerce plugin is not used in this theme.
+   Removed classes: .woocommerce, .nav-cart, .mini-cart-wrapper, .mobile-cart-icon, ul.sidebar-list */
 
 /* ============================================
    CUSTOM OVERRIDES & FINAL STYLES

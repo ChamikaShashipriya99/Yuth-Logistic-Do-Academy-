@@ -7780,92 +7780,9 @@ function(t, e) {
             }
         })
     }
-    function newsSlider() {
-        $('.news-slider .owl-carousel').owlCarousel({
-            autoplay: !0,
-            autoplayHoverPause: !0,
-            dots: !0,
-            loop: !0,
-            margin: 15,
-            items: 3,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                768: {
-                    items: 2,
-                },
-                992: {
-                    items: 3,
-                }
-            }
-        })
-    }
-    function serviceSlider() {
-        $('.service-slider .owl-carousel').owlCarousel({
-            autoplay: !0,
-            autoplayHoverPause: !0,
-            dots: !0,
-            loop: !1,
-            margin: 15,
-            items: 4,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                768: {
-                    items: 2,
-                },
-                992: {
-                    items: 4,
-                }
-            }
-        })
-    }
-    function testimonialsSlider() {
-        $('.testimonial-slider .owl-carousel').owlCarousel({
-            autoplay: !0,
-            autoplayHoverPause: !0,
-            dots: !1,
-            loop: !0,
-            nav: !0,
-            navText: ["<i class='fa fa-chevron-left' aria-hidden='true'></i>", "<i class='fa fa-chevron-right' aria-hidden='true'></i>"],
-            margin: 0,
-            items: 1,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                768: {
-                    items: 1,
-                },
-                992: {
-                    items: 1,
-                }
-            }
-        })
-    }
-    function projectSlider() {
-        $('.project-slider .owl-carousel').owlCarousel({
-            autoplay: !0,
-            autoplayHoverPause: !0,
-            dots: !1,
-            loop: !1,
-            margin: 30,
-            items: 4,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                768: {
-                    items: 3,
-                },
-                992: {
-                    items: 4,
-                }
-            }
-        })
-    }
+    /* Removed unused slider functions: newsSlider, serviceSlider, testimonialsSlider, projectSlider
+       These functions referenced CSS classes that don't exist in the theme templates.
+       Sliders are now handled by initLibs() and other newer implementations. */
     function fancyBox() {
         if (typeof $.fn.fancybox === "undefined") {
             return;
@@ -7874,31 +7791,8 @@ function(t, e) {
             thumbs: !1,
         })
     }
-    function isotope() {
-        var $container = $('.gallery-container');
-        $container.isotope({
-            filter: '*',
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: !1
-            }
-        });
-        $('.gallery-filter li').click(function() {
-            $('.gallery-filter .current').removeClass('current');
-            $(this).addClass('current');
-            var selector = $(this).attr('data-filter');
-            $container.isotope({
-                filter: selector,
-                animationOptions: {
-                    duration: 750,
-                    easing: 'linear',
-                    queue: !1
-                }
-            });
-            return !1
-        })
-    }
+    /* Removed unused isotope() function - .gallery-container and .gallery-filter classes 
+       are not used anywhere in the theme templates. */
     function toggleSearch() {
         $('#toggle-search').click(function(e) {
             e.preventDefault();
@@ -7930,20 +7824,8 @@ function(t, e) {
             $(this).fadeOut()
         })
     }
-    function heroSlider() {
-        var enable_nav, enable_dots;
-        enable_nav = $('.main-hero-slider').attr('enable-slide-nav');
-        enable_dots = $('.main-hero-slider').attr('enable-slide-dots');
-        $(".main-hero-slider .owl-carousel").owlCarousel({
-            items: 1,
-            animateOut: 'fadeOut',
-            animateIn: 'fadeIn',
-            loop: !0,
-            dots: enable_dots,
-            nav: enable_nav,
-            navText: ["<i class='fa fa-angle-left' aria-hidden='true'></i>", "<i class='fa fa-angle-right' aria-hidden='true'></i>"]
-        })
-    }
+    /* Removed unused heroSlider() function - .main-hero-slider class is not used 
+       anywhere in the theme templates. */
     function AOSInit() {
         if (typeof AOS === "undefined") {
             return;
@@ -7952,14 +7834,11 @@ function(t, e) {
     }
     scrollToTop();
     stickyHeader();
-    newsSlider();
-    serviceSlider();
-    testimonialsSlider();
-    projectSlider();
+    /* Removed calls to unused functions: newsSlider, serviceSlider, testimonialsSlider, projectSlider, heroSlider */
     fancyBox();
     toggleSearch();
     toggleSidebar();
-    heroSlider();
+    /* Removed call to unused heroSlider() */
     AOSInit();
     triggerHeaderDropdownsOnHover();
     triggerSideMenuDropdown()
