@@ -14798,10 +14798,16 @@ div.wpcf7 .ajax-loader:after {
     position: relative
 }
 
-.wpcf7 form div.wpcf7-response-output,.wpcf7 form div.wpcf7-validation-errors {
+.wpcf7 form div.wpcf7-response-output:not(.wpcf7-mail-sent-ok),.wpcf7 form div.wpcf7-validation-errors {
     margin: 15px 0 0;
     border: 2px solid;
-    color: #fff;
+    padding: 10px 14px;
+    background-color: transparent
+}
+
+.wpcf7 form div.wpcf7-response-output.wpcf7-mail-sent-ok {
+    margin: 15px 0 0;
+    border: 2px solid;
     padding: 10px 14px;
     background-color: transparent
 }
@@ -14812,20 +14818,26 @@ div.wpcf7-response-output:before,div.wpcf7-validation-errors:before {
     clear: both
 }
 
-div.wpcf7-response-output,div.wpcf7-validation-errors {
-    border-color: #f4524d !important
+div.wpcf7-response-output:not(.wpcf7-mail-sent-ok),div.wpcf7-validation-errors {
+    border-color: #f4524d !important;
+    color: #f4524d !important
 }
 
-.ptc-f-light-bg div.wpcf7-response-output,.ptc-f-light-bg div.wpcf7-validation-errors {
+.ptc-f-light-bg div.wpcf7-response-output:not(.wpcf7-mail-sent-ok),.ptc-f-light-bg div.wpcf7-validation-errors {
     border: 1px solid #f4524d !important;
     color: #f4524d !important
 }
 
-.wpcf7 form.sent .wpcf7-response-output {
-    border-color: #6dab3c !important
+.wpcf7 form.sent .wpcf7-response-output,
+.wpcf7 form div.wpcf7-response-output.wpcf7-mail-sent-ok,
+div.wpcf7-response-output.wpcf7-mail-sent-ok {
+    border-color: #6dab3c !important;
+    color: #6dab3c !important
 }
 
-.ptc-f-light-bg .wpcf7 form.sent .wpcf7-response-output {
+.ptc-f-light-bg .wpcf7 form.sent .wpcf7-response-output,
+.ptc-f-light-bg .wpcf7 form div.wpcf7-response-output.wpcf7-mail-sent-ok,
+.ptc-f-light-bg div.wpcf7-response-output.wpcf7-mail-sent-ok {
     border-color: #6dab3c !important;
     color: #6dab3c !important
 }
