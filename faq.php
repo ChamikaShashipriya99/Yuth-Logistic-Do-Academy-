@@ -10,13 +10,14 @@
 
 get_header();
 
-// ACF fields for this page.
+// ACF fields for this page. These are defined in an ACF field group
+// assigned to the "FAQs" page template.
 $faq_header_title = get_field( 'faq_header_title' );
 $faq_items        = get_field( 'faq_items' );
 ?>
 
 <!-- ==============================================================
-     PAGE HEADER BANNER
+     PAGE HEADER BANNER (title loaded from ACF: faq_header_title)
      ============================================================== -->
 <div class="page-header-banner bagels-overlay ">
     <div class="phb-bg"></div>
@@ -30,11 +31,12 @@ $faq_items        = get_field( 'faq_items' );
     </div>
 
 <!-- ==============================================================
-     FAQ CONTENT
+     FAQ CONTENT (FAQ items loaded from ACF repeater: faq_items)
      ============================================================== -->
 <div class="container page-container pc-archive-faqs h-p-ul-m-0">
     <div class="pc-af-faqs">
         <div class="pc-af-t-1 bagels-flex-wrap bagels-flex">
+            <!-- Loop over each FAQ row from the ACF repeater field "faq_items" -->
             <?php if ( $faq_items ) : ?>
                 <?php foreach ( $faq_items as $faq_item ) : ?>
                     <div class="single-faq">
