@@ -3,29 +3,43 @@
  * Template Name: Blog Landing
  *
  * Displays the blog listing page that mirrors the static blog.html layout.
+ * The header banner title is loaded from an ACF field so it can be managed
+ * from the WordPress admin without hardcoded text.
  *
  * @package Youth_Logistic
  */
 
 get_header();
+
+// ACF field for this page. Defined in a field group assigned to the "Blog Landing" template.
+$blog_header_title = get_field( 'blog_header_title' );
 ?>
 
+    <!-- ==============================================================
+         PAGE HEADER BANNER (title loaded from ACF: blog_header_title)
+         ============================================================== -->
     <div class="page-header-banner bagels-overlay">
         <div class="phb-bg"></div>
         <div class="container phb-container bagels-pos-relative">
             <div class="phb-content">
                 <h1 class="phb-heading bagels-ff-gilroy-bold-alt">
-                    <?php the_title(); ?>
+                    <?php echo esc_html( $blog_header_title ); ?>
                 </h1>
             </div>
         </div>
     </div>
 
+    <!-- ==============================================================
+         BLOG POSTS LISTING (dynamic WP_Query of posts)
+         ============================================================== -->
     <div class="container blog-wrapper page-container">
         <div class="row bagels-justify-center bagels-flex">
             <div class="col-md-10 col-sm-12 col-xs-12">
                 <?php
+                // Determine the current page for pagination.
                 $paged      = max( 1, get_query_var( 'paged' ), get_query_var( 'page' ) );
+
+                // Query latest blog posts for this listing.
                 $blog_query = new WP_Query(
                     array(
                         'post_type'      => 'post',
@@ -34,18 +48,21 @@ get_header();
                     )
                 );
 
+                // If we have posts, render each one in the blog card layout.
                 if ( $blog_query->have_posts() ) :
                     while ( $blog_query->have_posts() ) :
                         $blog_query->the_post();
                         ?>
                         <div class="blog-posts">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pre-post-wrapper">
+                                <!-- Single blog post card -->
                                 <article <?php post_class( 'post-wrapper clearfix' ); ?>>
                                     <div class="col-md-4 col-sm-4 col-xs-12 p-0">
                                         <div class="post-header">
                                             <div class="post-thumb bagels-overlay">
                                                 <a href="<?php the_permalink(); ?>">
                                                     <?php
+                                                    // Use the post's featured image if available; otherwise a theme default.
                                                     if ( has_post_thumbnail() ) {
                                                         the_post_thumbnail( 'medium_large', array( 'class' => 'image-responsive' ) );
                                                     } else {
@@ -60,6 +77,7 @@ get_header();
                                     </div>
                                     <div class="col-md-8 col-sm-8 col-xs-12 p-0">
                                         <div class="post-content">
+                                            <!-- Post title, excerpt and read more link -->
                                             <h5 class="post-title">
                                                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                             </h5>
@@ -77,6 +95,7 @@ get_header();
                     endwhile;
                     ?>
                     <div class="pagination-wrapper">
+                        <!-- Paginate through all posts in this listing -->
                         <?php
                         echo wp_kses_post(
                             paginate_links(
