@@ -542,6 +542,9 @@ add_action( 'wp_ajax_youth_logistic_update_stats_order', 'youth_logistic_handle_
  * @return array Modified menu items with services injected.
  */
 function youth_logistic_add_services_to_menu( $sorted_menu_items, $args ) {
+    // Disabled: keep services menu fully manual (no auto-injected CPT links).
+    return $sorted_menu_items;
+
     // Only apply to primary and mobile menus.
     if ( ! in_array( $args->theme_location, array( 'primary', 'mobile' ), true ) ) {
         return $sorted_menu_items;
