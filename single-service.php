@@ -30,6 +30,9 @@ $field_prefix_map = array(
 
 $field_prefix = $field_prefix_map[ $service_slug ] ?? 'service';
 
+// Debug: Uncomment the line below to see what slug and prefix are being used
+// echo '<!-- Debug: Service Slug: ' . esc_html( $service_slug ) . ' | Field Prefix: ' . esc_html( $field_prefix ) . ' -->';
+
 // Page Header Banner Title
 $header_title = get_field( $field_prefix . '_header_title' ) ?: get_the_title();
 
