@@ -25,7 +25,7 @@ $service_slug = get_post_field( 'post_name', get_the_ID() );
 $field_prefix_map = array(
     'tailgate-haul-truck-with-forklift-service' => 'tailgate',
     'onsite-forklift-hire'                      => 'onsite_forklift',
-    'metro-regional-same-day-delivery'          => 'metro_regional_same_day_delivery',
+    'metro-regional-same-day-delivery'          => 'metro_&_regional_same-day_delivery',
     // Add more service slugs and their field prefixes as needed
 );
 
