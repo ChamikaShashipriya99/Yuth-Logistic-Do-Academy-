@@ -26,6 +26,7 @@ $field_prefix_map = array(
     'tailgate-haul-truck-with-forklift-service' => 'tailgate',
     'onsite-forklift-hire'                      => 'onsite_forklift',
     'metro-regional-same-day-delivery'          => 'metro_&_regional_same-day_delivery',
+    'pallet-transport'                          => 'pallet_transport',
     // Add more service slugs and their field prefixes as needed
 );
 
