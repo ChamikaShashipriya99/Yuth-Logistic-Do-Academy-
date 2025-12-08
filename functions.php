@@ -189,14 +189,6 @@ add_action( 'init', 'youth_logistic_register_service_post_type' );
  * @return string
  */
 function services() {
-    // Map service slugs to their corresponding sprite icon classes.
-    $service_icon_map = array(
-        'tailgate-haul-truck-with-forklift-service' => 'three-trucks-parallel',
-        'onsite-forklift-hire'                      => 'forklift',
-        'metro-regional-same-day-delivery'          => 'lorry-with-cargo',
-        'pallet-transport'                          => 'forklift-two-boxes',
-        'point-a-to-b-transport'                    => 'two-location-markers',
-    );
 
     $service_query = new WP_Query(
         array(
@@ -218,8 +210,8 @@ function services() {
             $service_title = get_the_title();
             $service_copy  = get_the_excerpt() ?: wp_trim_words( wp_strip_all_tags( get_the_content() ), 30 );
             $service_slug  = get_post_field( 'post_name', get_the_ID() );
-            // Use mapped icon or fall back to ACF field, then default.
-            $icon_class    = $service_icon_map[ $service_slug ] ?? ( get_field( 'service_icon_class', get_the_ID() ) ?: 'three-trucks-parallel' );
+            // Prefer ACF-provided icon; otherwise use mapped icon; no hardcoded fallback.
+            $icon_class    = get_field( 'service_icon_class', get_the_ID() ) ?: ( $service_icon_map[ $service_slug ] ?? '' );
             ?>
             <div class="ph-svs-s-s-0">
                 <a href="<?php echo esc_url( $service_link ); ?>" title="<?php echo esc_attr( $service_title ); ?>" class="ph-svs-s-single bagels-pos-relative">

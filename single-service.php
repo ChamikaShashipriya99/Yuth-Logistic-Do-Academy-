@@ -20,17 +20,8 @@ $service_slug = get_post_field( 'post_name', get_the_ID() );
 // ==============================================================
 // ACF FIELD RETRIEVAL
 // ==============================================================
-// Map service slugs to their ACF field prefixes
-// This allows different services to use different ACF field groups
-$field_prefix_map = array(
-    'tailgate-haul-truck-with-forklift-service' => 'tailgate',
-    'onsite-forklift-hire'                      => 'onsite_forklift',
-    'metro-regional-same-day-delivery'          => 'metro_&_regional_same-day_delivery',
-    'pallet-transport'                          => 'pallet_transport',
-    // Add more service slugs and their field prefixes as needed
-);
-
-$field_prefix = $field_prefix_map[ $service_slug ] ?? 'service';
+// Use a single, generic ACF prefix for all services
+$field_prefix = 'service';
 
 // Debug: Uncomment the line below to see what slug and prefix are being used
 // echo '<!-- Debug: Service Slug: ' . esc_html( $service_slug ) . ' | Field Prefix: ' . esc_html( $field_prefix ) . ' -->';
