@@ -119,7 +119,7 @@ $footer_solution_logo_alt = $footer_solution_logo['alt'] ?? ( $footer_solution_n
                                         </div>
                                     <?php endif; ?>
                                     <?php if ( $form_title ) : ?>
-                                        <h2 class="vc-tt-title"><?php echo esc_html( $form_title ); ?></h2>
+                                        <h2 class="vc-tt-title"><?php echo esc_html( $form_title ); ?></h2><br>
                                     <?php endif; ?>
                                 </div>
                             </div>
