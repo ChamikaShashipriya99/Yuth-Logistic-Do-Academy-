@@ -412,7 +412,7 @@ $related_services_items = get_field( $field_prefix . '_related_services_items' )
 </script>
 
 <?php
-// Load WordPress footer template
-get_footer();
+// Load WordPress footer template for service pages
+get_footer( 'service' );
 ?>
 
