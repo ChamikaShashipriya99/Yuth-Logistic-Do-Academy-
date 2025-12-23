@@ -5,23 +5,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog – Youth Logistic</title>
         <meta name="robots" content="max-image-preview:large"/>
-        <link rel="stylesheet" href="styles.css"/>
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../styles.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
               integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
               crossorigin="anonymous" referrerpolicy="no-referrer"/>
-        <link rel="icon" href="images/titelIcon.png"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="icon" href="../images/titelIcon.png"/>
+        <!-- Privacy Policy Content Styles -->
+        <style>
+            .privacy-policy-content h2 {
+                font-family: 'Heebo', sans-serif;
+                font-size: 30px;
+                font-weight: 500;
+            }
+            .privacy-policy-content p {
+                font-family: 'Heebo', sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+            }
+        </style>
     </head>
+    
     <body class="home wp-singular page-template-default page blog-template">
         <div class="body-wrap">
-            <!-- ====== HEADER / NAVIGATION ====== -->
+            
+            <!-- ==============================================================
+                 HEADER / NAVIGATION
+                 ============================================================== -->
             <nav class="navbar navbar-fixed-top navbar-default" id="site-header">
                 <div class="container">
                     <div class="flex-parent bagels-trans-p-2">
+                        <!-- Logo and Mobile Toggle -->
                         <div class="navbar-header">
                             <a class="navbar-brand header-logo" href="index.html">
-                                <img class="bagels-trans-p-2" src="images/Logo.svg" alt="Yuth Logistics">
+                                <img class="bagels-trans-p-2" src="../images/Logo.svg" alt="Yuth Logistics">
                             </a>
                             <div class="nh-1">
+                                <!-- Tablet Contact Info -->
                                 <div class="contact-info-bar style-2 visible-sm">
                                     <div class="cib-1">
                                         <div class="contact-group">
@@ -39,7 +63,6 @@
                                             <h4 class="cg-heading">
                                                 <span class="cg-h-icon">
                                                     <i class="fas fa-envelope"></i>
-                                                    
                                                 </span>
                                                 <span class="cg-h-text">Email</span>
                                             </h4>
@@ -49,6 +72,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                
+                                <!-- Mobile Contact Info -->
                                 <div class="contact-info-bar style-3 visible-xs">
                                     <div class="cib-1">
                                         <div class="contact-group">
@@ -62,6 +87,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                
+                                <!-- Hamburger Menu -->
                                 <a href="#" data-sidebar="left-sidebar" class="sidebar-toggler header-ham-icon visible-xs visible-sm" title="Toggle menu">
                                     <span></span>
                                     <span></span>
@@ -70,7 +97,10 @@
                                 </a>
                             </div>
                         </div>
+
+                        <!-- Desktop Navigation -->
                         <div class="collapse navbar-collapse" id="main-navbar">
+                            <!-- Top Bar Contact Info -->
                             <div class="contact-info-bar style-1 bagels-trans-p-2">
                                 <div class="cib-1">
                                     <div class="contact-group">
@@ -119,8 +149,10 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            <!-- Main Menu -->
                             <ul id="menu-header-menu" class="nav navbar-nav navbar-right">
-                                <li class="menu-item">
+                                <li class="menu-item active">
                                     <a title="Home" href="index.html">Home</a>
                                 </li>
                                 <li class="menu-item dropdown menu-item-has-children">
@@ -152,7 +184,10 @@
                     </div>
                 </div>
             </nav>
-            <!-- ====== MOBILE SIDEBAR NAVIGATION ====== -->
+
+            <!-- ==============================================================
+                 MOBILE SIDEBAR NAVIGATION
+                 ============================================================== -->
             <div class="sidebar-nav visible-xs visible-sm" id="left-sidebar">
                 <ul id="menu-mobile-menu" class="nav navbar-nav navbar-right">
                     <li class="menu-item">
@@ -164,7 +199,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a title="Tailgate Haul &amp; Truck with Forklift Service" href="Tailgate Haul & Truck with Forklift Service.html">Tailgate Haul &amp; Truck with Forklift Service</a></li>
-                            <li><a title="Onsite Forklift Hire" href="Onsite Forklift Hire.html">Onsite Forklift Hire</a></li>
+                            <li><a title="Onsite Forklift Hire" href="#">Onsite Forklift Hire</a></li>
                             <li><a title="Metro &amp; Regional Same-Day Delivery" href="#">Metro &amp; Regional Same-Day Delivery</a></li>
                             <li><a title="Pallet Transport" href="#">Pallet Transport</a></li>
                             <li><a title="Point A to B Transport" href="#">Point A to B Transport</a></li>
@@ -188,134 +223,68 @@
                 </ul>
             </div>
             <div class="sidebar-overlay"></div>
-            <!-- ====== PAGE HEADER BANNER ====== -->
+
+            <!-- ==============================================================
+                 PAGE HEADER BANNER
+                 ============================================================== -->
             <div class="page-header-banner bagels-overlay ">
                 <div class="phb-bg"></div>
                 <div class="container phb-container bagels-pos-relative">
                     <div class="phb-content">
-                        <h1 class="phb-heading bagels-ff-gilroy-bold-alt">Blog</h1>
+                        <h1 class="phb-heading bagels-ff-gilroy-bold-alt">Privacy Policy</h1>
                     </div>
                 </div>
             </div>
-            <!-- ====== BLOG LISTING ====== -->
-            <div class="container blog-wrapper page-container">
-                <div class="row bagels-justify-center bagels-flex">
-                    <div class="col-md-10 col-sm-12 col-xs-12">
-                        <!-- Single Blog Card -->
-                        <div class="blog-posts">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pre-post-wrapper">
-                                <article class="post-wrapper clearfix">
-                                    <div class="col-md-4 col-sm-4 col-xs-12 p-0">
-                                        <div class="post-header">
-                                            <div class="post-thumb bagels-overlay">
-                                                <a href="">
-                                                    <img src="images/ourBlog1.jpg" alt="How Local Partnerships Boost Logistics Efficiency Significantly" class="image-responsive">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8 col-xs-12 p-0">
-                                        <div class="post-content">
-                                            <h5 class="post-title">
-                                                <a href="">How Local Partnerships Boost Logistics Efficiency Significantly</a>
-                                            </h5>
-                                            <p>In today’s competitive logistics market, efficiency is key to success. One strategy that can significantly boost logistics efficiency is forming local partnerships. By working with local businesses, logistics companies can lower costs, improve delivery times, and strengthen customer trust. In this blog, we will explore…</p>
-                                            <a href="" class="post-link">Read more <i class="fas fa-angle-double-right"></i></a>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        <!-- Single Blog Card -->
-                        <div class="blog-posts">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pre-post-wrapper">
-                                <article class="post-wrapper clearfix">
-                                    <div class="col-md-4 col-sm-4 col-xs-12 p-0">
-                                        <div class="post-header">
-                                            <div class="post-thumb bagels-overlay">
-                                                <a href="">
-                                                    <img src="images/ourBlog3.jpg" alt="The Power of Experience" class="image-responsive">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8 col-xs-12 p-0">
-                                        <div class="post-content">
-                                            <h5 class="post-title">
-                                                <a href="">The Power of Experience How Logistics Teams Grow Through Experience</a>
-                                            </h5>
-                                            <p>In the fast-paced world of logistics, experience is everything. While training and theory are important, it’s hands-on experience that truly sets logistics teams apart. When teams learn from real-world challenges, they develop the skills, confidence, and know-how needed to handle whatever comes their way. In…</p>
-                                            <a href="" class="post-link">Read more <i class="fas fa-angle-double-right"></i></a>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        <!-- Single Blog Card -->
-                        <div class="blog-posts">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pre-post-wrapper">
-                                <article class="post-wrapper clearfix">
-                                    <div class="col-md-4 col-sm-4 col-xs-12 p-0">
-                                        <div class="post-header">
-                                            <div class="post-thumb bagels-overlay">
-                                                <a href="">
-                                                    <img src="images/ourBlog2.jpg" alt="Managing Logistics During Peak Seasons" class="image-responsive">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8 col-xs-12 p-0">
-                                        <div class="post-content">
-                                            <h5 class="post-title">
-                                                <a href="">Managing Logistics During Peak Seasons</a>
-                                            </h5>
-                                            <p>Peak seasons in logistics can bring excitement, but they also come with a fair share of challenges. Whether it’s the holiday rush, special promotions, or seasonal demand, managing logistics during these busy times requires careful planning, efficient strategies, and flexibility. In this blog, we’ll explore…</p>
-                                            <a href="" class="post-link">Read more <i class="fas fa-angle-double-right"></i></a>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="pagination-wrapper"></div>
-                    </div>
-                </div>
+
+            <!-- ==============================================================
+                 PRIVACY POLICY CONTENT
+                 ============================================================== -->
+            <div class="container page-container pc-default privacy-policy-content">
+                <h2 class="wp-block-heading">Who we are</h2>
+                <p>Our website address is: https://yuthlogistics.com.au.</p>
+
+                <h2 class="wp-block-heading">Comments</h2>
+                <p>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor's IP address and browser user agent string to help spam detection.</p>
+                <p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p>
+
+                <h2 class="wp-block-heading">Media</h2>
+                <p>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p>
+
+                <h2 class="wp-block-heading">Cookies</h2>
+                <p>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p>
+                <p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p>
+                <p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select "Remember Me", your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p>
+                <p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p>
+
+                <h2 class="wp-block-heading">Embedded content from other websites</h2>
+                <p>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p>
+                <p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p>
+
+                <h2 class="wp-block-heading">Who we share your data with</h2>
+                <p>If you request a password reset, your IP address will be included in the reset email.</p>
+
+                <h2 class="wp-block-heading">How long we retain your data</h2>
+                <p>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p>
+                <p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p>
+
+                <h2 class="wp-block-heading">What rights you have over your data</h2>
+                <p>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p>
+
+                <h2 class="wp-block-heading">Where your data is sent</h2>
+                <p>Visitor comments may be checked through an automated spam detection service.</p>
             </div>
-            <!-- ====== CTA SECTION ====== -->
-            <div class="footer-cta-banner h-p-ul-m-0">
-                <picture>
-                    <source media="(max-width: 991px)">
-                    <source>
-                    <img src="images/lookingForTransport.jpg" alt="transport cta background" class="cta-banner cta-banner-img bagels-cover-img">
-                </picture>
-                <div class="container cta-1">
-                    <div class="cta-2">
-                        <div class="cta-heading">
-                            <h2 class="cta-h-1">
-                                Looking for<br/>Reliable Transport?
-                            </h2>
-                        </div>
-                        <div class="cta-descr">
-                            <p class="cta-d-1">
-                                Save Time. Save Money.<br/>Choose Yuth Logistics Today.
-                            </p>
-                        </div>
-                        <div class="cta-button">
-                            <div class="vc-theme-button">
-                                <a title="Contact Us" target="_self" href="contact-us.html">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ====== FOOTER WIDGETS ====== -->
+
+            <!-- ==============================================================
+                 FOOTER WIDGETS
+                 ============================================================== -->
             <div id="footer-widget-area" class="h-p-ul-m-0">
                 <div class="container">
+                    <!-- Brand Widget -->
                     <div class="footer-widget-box fwb-brands h-p-ul-m-0">
                         <div class="fwb-ci-1"></div>
                     </div>
+                    
+                    <!-- Contact Info Widget -->
                     <div class="footer-widget-box fwb-contact-info h-p-ul-m-0">
                         <div class="fwb-ci-1">
                             <h2 class="fwb-ci-title">Contact Us</h2>
@@ -356,6 +325,8 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- Footer Menu Widget -->
                     <div class="footer-widget-box fwb-menu">
                         <div id="footer-menu">
                             <ul id="menu-footer-menu" class="nav widget-nav-list">
@@ -368,7 +339,7 @@
                                 <li class="menu-item">
                                     <a title="About Us" href="about-us.html">About Us</a>
                                 </li>
-                                <li class="menu-item current-menu-item">
+                                <li class="menu-item">
                                     <a title="Blog" href="blog.html">Blog</a>
                                 </li>
                                 <li class="menu-item">
@@ -377,7 +348,7 @@
                                 <li class="menu-item">
                                     <a title="FAQs" href="FAQs.html">FAQs</a>
                                 </li>
-                                <li class="menu-item">
+                                <li class="menu-item current-menu-item">
                                     <a title="Privacy Policy" href="Privacy-Policy.html">Privacy Policy</a>
                                 </li>
                             </ul>
@@ -385,7 +356,10 @@
                     </div>
                 </div>
             </div>
-            <!-- ====== FOOTER BOTTOM ====== -->
+
+            <!-- ==============================================================
+                 FOOTER BOTTOM (Copyright & Credits)
+                 ============================================================== -->
             <div id="footer-bottom">
                 <div class="container">
                     <div class="fb-1">
@@ -394,7 +368,7 @@
                             <div class="fb-sc-text">Solution by</div>
                             <a href="#" target="_blank" title="Domedia.lk" class="fb-sc-link">
                                 <div class="fb-sc-l-img">
-                                    <img src="images/domediaLogo.jpg" alt="Domedia logo">
+                                    <img src="../images/domediaLogo.jpg" alt="Domedia logo">
                                 </div>
                                 <div class="fb-sc-l-name">DoMedia</div>
                             </a>
@@ -402,9 +376,10 @@
                     </div>
                 </div>
             </div>
-            <script src="js/jquery.min.js"></script>
-            <script data-optimized="1" src="javascript.js"></script>
+            
+            <!-- Scripts -->
+            <script src="../js/jquery.min.js"></script>
+            <script data-optimized="1" src="../javascript.js"></script>
         </div>
     </body>
 </html>
-
