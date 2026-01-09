@@ -15,7 +15,7 @@ $profile_shortcode = get_field( 'profile_shortcode' );
 			</h1>
         </div>
     </div>
-</div>
+</div><br>
 
 <div class="doregister-page doregister-page-profile">
     <?php
